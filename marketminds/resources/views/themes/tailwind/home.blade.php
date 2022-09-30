@@ -2,205 +2,441 @@
 
 @section('content')
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brief Nutty Sapphire</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;📁&lt;/text&gt;&lt;/svg&gt;">
 
-    <div class="relative flex items-center w-full">
-        <div class="relative z-20 px-8 mx-auto xl:px-5 max-w-7xl">
+    <style>/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{top:0px;right:0px;bottom:0px;left:0px}.bottom-0{bottom:0px}.right-0{right:0px}.top-0{top:0px}.left-0{left:0px}.top-1\/2{top:50%}.top-24{top:6rem}.z-50{z-index:50}.z-40{z-index:40}.z-30{z-index:30}.z-20{z-index:20}.z-10{z-index:10}.z-0{z-index:0}.order-last{order:9999}.col-span-6{grid-column:span 6 / span 6}.col-span-1{grid-column:span 1 / span 1}.col-span-2{grid-column:span 2 / span 2}.col-span-full{grid-column:1 / -1}.row-span-2{grid-row:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.-mx-5{margin-left:-1.25rem;margin-right:-1.25rem}.-my-2{margin-top:-0.5rem;margin-bottom:-0.5rem}.mb-3{margin-bottom:0.75rem}.ml-3{margin-left:0.75rem}.mt-24{margin-top:6rem}.ml-0{margin-left:0px}.mr-0{margin-right:0px}.mt-48{margin-top:12rem}.mt-8{margin-top:2rem}.mr-10{margin-right:2.5rem}.mt-2{margin-top:0.5rem}.mt-1{margin-top:0.25rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.mt-0{margin-top:0px}.mt-12{margin-top:3rem}.mr-4{margin-right:1rem}.mt-20{margin-top:5rem}.mb-20{margin-bottom:5rem}.mb-1{margin-bottom:0.25rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-10{margin-bottom:2.5rem}.mt-4{margin-top:1rem}.-ml-0{margin-left:-0px}.-mt-0\.5{margin-top:-0.125rem}.-mt-20{margin-top:-5rem}.mr-1{margin-right:0.25rem}.-mt-0{margin-top:-0px}.mb-12{margin-bottom:3rem}.mt-14{margin-top:3.5rem}.mt-5{margin-top:1.25rem}.mr-8{margin-right:2rem}.-ml-24{margin-left:-6rem}.-mb-24{margin-bottom:-6rem}.mr-3{margin-right:0.75rem}.mb-7{margin-bottom:1.75rem}.-ml-4{margin-left:-1rem}.-mr-4{margin-right:-1rem}.box-content{box-sizing:content-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-10{height:2.5rem}.h-4{height:1rem}.h-24{height:6rem}.h-5{height:1.25rem}.h-64{height:16rem}.h-1{height:0.25rem}.h-8{height:2rem}.h-auto{height:auto}.h-12{height:3rem}.h-6{height:1.5rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-48{height:12rem}.h-96{height:24rem}.h-9{height:2.25rem}.h-7{height:1.75rem}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-10{width:2.5rem}.w-4{width:1rem}.w-auto{width:auto}.w-6{width:1.5rem}.w-12{width:3rem}.w-8{width:2rem}.w-5{width:1.25rem}.w-16{width:4rem}.w-3{width:0.75rem}.w-2{width:0.5rem}.w-20{width:5rem}.w-2\/3{width:66.666667%}.w-48{width:12rem}.w-96{width:24rem}.w-3\/4{width:75%}.max-w-6xl{max-width:72rem}.max-w-xl{max-width:36rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-3xl{max-width:48rem}.max-w-screen-2xl{max-width:1536px}.max-w-screen-md{max-width:768px}.max-w-xs{max-width:20rem}.max-w-screen-xl{max-width:1280px}.max-w-sm{max-width:24rem}.flex-shrink-0{flex-shrink:0}.-translate-y-full{--tw-translate-y:-100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-2\.5{--tw-translate-y:-0.625rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-2{--tw-translate-x:0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-2{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-8{--tw-translate-x:2rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-1\/2{--tw-translate-x:50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-1{--tw-translate-y:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-rotate-0{--tw-rotate:-0deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-3{--tw-rotate:3deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-14{gap:3.5rem}.gap-8{gap:2rem}.gap-4{gap:1rem}.gap-x-16{column-gap:4rem}.gap-y-20{row-gap:5rem}.gap-y-8{row-gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-lg{border-radius:0.5rem}.rounded-2xl{border-radius:1rem}.border{border-width:1px}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-b{border-bottom-width:1px}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.border-gray-900{--tw-border-opacity:1;border-color:rgb(17 24 39 / var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity))}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity))}.bg-pink-100{--tw-bg-opacity:1;background-color:rgb(252 231 243 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-yellow-300{--tw-bg-opacity:1;background-color:rgb(253 224 71 / var(--tw-bg-opacity))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.bg-indigo-500{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity))}.bg-opacity-5{--tw-bg-opacity:0.05}.bg-none{background-image:none}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-pink-500{--tw-gradient-from:#ec4899;--tw-gradient-to:rgb(236 72 153 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7;--tw-gradient-to:rgb(168 85 247 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gray-800{--tw-gradient-from:#1f2937;--tw-gradient-to:rgb(31 41 55 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-yellow-300{--tw-gradient-from:#fde047;--tw-gradient-to:rgb(253 224 71 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-400{--tw-gradient-from:#f472b6;--tw-gradient-to:rgb(244 114 182 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-yellow-200{--tw-gradient-from:#fef08a;--tw-gradient-to:rgb(254 240 138 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-300{--tw-gradient-from:#a5b4fc;--tw-gradient-to:rgb(165 180 252 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-yellow-400{--tw-gradient-from:#facc15;--tw-gradient-to:rgb(250 204 21 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-400{--tw-gradient-from:#4ade80;--tw-gradient-to:rgb(74 222 128 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-300{--tw-gradient-from:#86efac;--tw-gradient-to:rgb(134 239 172 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-400{--tw-gradient-from:#60a5fa;--tw-gradient-to:rgb(96 165 250 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-300{--tw-gradient-from:#93c5fd;--tw-gradient-to:rgb(147 197 253 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-400{--tw-gradient-from:#818cf8;--tw-gradient-to:rgb(129 140 248 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-300{--tw-gradient-from:#f9a8d4;--tw-gradient-to:rgb(249 168 212 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent;--tw-gradient-to:rgb(0 0 0 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-red-400{--tw-gradient-to:rgb(248 113 113 / 0);--tw-gradient-stops:var(--tw-gradient-from), #f87171, var(--tw-gradient-to)}.via-red-300{--tw-gradient-to:rgb(252 165 165 / 0);--tw-gradient-stops:var(--tw-gradient-from), #fca5a5, var(--tw-gradient-to)}.via-blue-300{--tw-gradient-to:rgb(147 197 253 / 0);--tw-gradient-stops:var(--tw-gradient-from), #93c5fd, var(--tw-gradient-to)}.via-blue-400{--tw-gradient-to:rgb(96 165 250 / 0);--tw-gradient-stops:var(--tw-gradient-from), #60a5fa, var(--tw-gradient-to)}.via-purple-400{--tw-gradient-to:rgb(192 132 252 / 0);--tw-gradient-stops:var(--tw-gradient-from), #c084fc, var(--tw-gradient-to)}.via-purple-300{--tw-gradient-to:rgb(216 180 254 / 0);--tw-gradient-stops:var(--tw-gradient-from), #d8b4fe, var(--tw-gradient-to)}.via-blue-500{--tw-gradient-to:rgb(59 130 246 / 0);--tw-gradient-stops:var(--tw-gradient-from), #3b82f6, var(--tw-gradient-to)}.via-indigo-600{--tw-gradient-to:rgb(79 70 229 / 0);--tw-gradient-stops:var(--tw-gradient-from), #4f46e5, var(--tw-gradient-to)}.to-purple-500{--tw-gradient-to:#a855f7}.to-pink-500{--tw-gradient-to:#ec4899}.to-gray-900{--tw-gradient-to:#111827}.to-pink-400{--tw-gradient-to:#f472b6}.to-yellow-300{--tw-gradient-to:#fde047}.to-green-300{--tw-gradient-to:#86efac}.to-pink-300{--tw-gradient-to:#f9a8d4}.to-indigo-400{--tw-gradient-to:#818cf8}.to-indigo-300{--tw-gradient-to:#a5b4fc}.to-green-400{--tw-gradient-to:#4ade80}.to-blue-400{--tw-gradient-to:#60a5fa}.to-blue-300{--tw-gradient-to:#93c5fd}.to-yellow-400{--tw-gradient-to:#facc15}.to-red-500{--tw-gradient-to:#ef4444}.to-blue-500{--tw-gradient-to:#3b82f6}.bg-cover{background-size:cover}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.bg-bottom{background-position:bottom}.fill-current{fill:currentColor}.stroke-current{stroke:currentColor}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.object-center{object-position:center}.p-10{padding:2.5rem}.p-6{padding:1.5rem}.p-4{padding:1rem}.p-0\.5{padding:0.125rem}.p-5{padding:1.25rem}.p-0{padding:0px}.p-1{padding:0.25rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-20{padding-left:5rem;padding-right:5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-16{padding-top:4rem;padding-bottom:4rem}.px-16{padding-left:4rem;padding-right:4rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-12{padding-top:3rem;padding-bottom:3rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-7{padding-top:1.75rem;padding-bottom:1.75rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.pb-10{padding-bottom:2.5rem}.pt-5{padding-top:1.25rem}.pb-8{padding-bottom:2rem}.pr-0{padding-right:0px}.pt-20{padding-top:5rem}.pb-32{padding-bottom:8rem}.pl-10{padding-left:2.5rem}.pr-5{padding-right:1.25rem}.pb-5{padding-bottom:1.25rem}.pb-3{padding-bottom:0.75rem}.pt-7{padding-top:1.75rem}.pb-14{padding-bottom:3.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-7xl{font-size:4.5rem;line-height:1}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-5xl{font-size:3rem;line-height:1}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.font-normal{font-weight:400}.font-thin{font-weight:100}.uppercase{text-transform:uppercase}.capitalize{text-transform:capitalize}.leading-none{line-height:1}.leading-tight{line-height:1.25}.leading-5{line-height:1.25rem}.leading-normal{line-height:1.5}.leading-relaxed{line-height:1.625}.leading-6{line-height:1.5rem}.tracking-widest{letter-spacing:0.1em}.tracking-wide{letter-spacing:0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-tight{letter-spacing:-0.025em}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity))}.text-pink-600{--tw-text-opacity:1;color:rgb(219 39 119 / var(--tw-text-opacity))}.text-transparent{color:transparent}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity))}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity))}.text-red-50{--tw-text-opacity:1;color:rgb(254 242 242 / var(--tw-text-opacity))}.text-blue-50{--tw-text-opacity:1;color:rgb(239 246 255 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129 / var(--tw-text-opacity))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-100{opacity:1}.opacity-75{opacity:0.75}.opacity-50{opacity:0.5}.opacity-25{opacity:0.25}.opacity-10{opacity:0.1}.opacity-5{opacity:0.05}.opacity-0{opacity:0}.opacity-70{opacity:0.7}.opacity-30{opacity:0.3}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-100{transition-duration:100ms}.duration-150{transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-500{transition-duration:500ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.ease-in{transition-timing-function:cubic-bezier(0.4, 0, 1, 1)}.ease-linear{transition-timing-function:linear}.hover\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.hover\:bg-gray-900:hover{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.hover\:bg-red-600:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity))}.hover\:text-indigo-600:hover{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity))}.hover\:text-gray-600:hover{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.hover\:text-gray-100:hover{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity))}.hover\:text-gray-200:hover{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity))}.hover\:text-gray-400:hover{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.hover\:text-gray-500:hover{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:text-gray-100:focus{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:-translate-y-1\.5{--tw-translate-y:-0.375rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:translate-x-1\.5{--tw-translate-x:0.375rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:-translate-y-1{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:translate-x-1{--tw-translate-x:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width: 640px){.sm\:col-span-4{grid-column:span 4 / span 4}.sm\:col-span-1{grid-column:span 1 / span 1}.sm\:row-start-2{grid-row-start:2}.sm\:row-start-4{grid-row-start:4}.sm\:row-start-6{grid-row-start:6}.sm\:row-start-1{grid-row-start:1}.sm\:row-start-3{grid-row-start:3}.sm\:row-start-5{grid-row-start:5}.sm\:mr-3{margin-right:0.75rem}.sm\:mt-10{margin-top:2.5rem}.sm\:mt-1{margin-top:0.25rem}.sm\:ml-3{margin-left:0.75rem}.sm\:-mb-32{margin-bottom:-8rem}.sm\:flex{display:flex}.sm\:w-full{width:100%}.sm\:w-auto{width:auto}.sm\:w-20{width:5rem}.sm\:w-1\/2{width:50%}.sm\:max-w-5xl{max-width:64rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-between{justify-content:space-between}.sm\:py-48{padding-top:12rem;padding-bottom:12rem}.sm\:py-12{padding-top:3rem;padding-bottom:3rem}.sm\:px-12{padding-left:3rem;padding-right:3rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-8{padding-top:2rem}.sm\:pl-10{padding-left:2.5rem}.sm\:pr-4{padding-right:1rem}.sm\:text-center{text-align:center}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}}@media (min-width: 768px){.md\:absolute{position:absolute}.md\:relative{position:relative}.md\:order-first{order:-9999}.md\:col-span-3{grid-column:span 3 / span 3}.md\:col-span-6{grid-column:span 6 / span 6}.md\:col-span-2{grid-column:span 2 / span 2}.md\:col-start-1{grid-column-start:1}.md\:col-start-2{grid-column-start:2}.md\:col-start-3{grid-column-start:3}.md\:row-start-3{grid-row-start:3}.md\:row-start-5{grid-row-start:5}.md\:row-start-2{grid-row-start:2}.md\:row-start-4{grid-row-start:4}.md\:row-start-1{grid-row-start:1}.md\:mx-0{margin-left:0px;margin-right:0px}.md\:mt-0{margin-top:0px}.md\:ml-12{margin-left:3rem}.md\:mr-3{margin-right:0.75rem}.md\:mb-0{margin-bottom:0px}.md\:-ml-20{margin-left:-5rem}.md\:mt-24{margin-top:6rem}.md\:mb-16{margin-bottom:4rem}.md\:mb-10{margin-bottom:2.5rem}.md\:-mb-24{margin-bottom:-6rem}.md\:block{display:block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:h-24{height:6rem}.md\:h-full{height:100%}.md\:h-14{height:3.5rem}.md\:w-auto{width:auto}.md\:w-2\/3{width:66.666667%}.md\:w-1\/3{width:33.333333%}.md\:w-96{width:24rem}.md\:w-48{width:12rem}.md\:w-14{width:3.5rem}.md\:w-3\/4{width:75%}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}.md\:items-center{align-items:center}.md\:justify-end{justify-content:flex-end}.md\:justify-center{justify-content:center}.md\:justify-between{justify-content:space-between}.md\:gap-12{gap:3rem}.md\:gap-5{gap:1.25rem}.md\:space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.md\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse))}.md\:space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.md\:border-0{border-width:0px}.md\:border-none{border-style:none}.md\:bg-transparent{background-color:transparent}.md\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.md\:p-0{padding:0px}.md\:py-0{padding-top:0px;padding-bottom:0px}.md\:px-5{padding-left:1.25rem;padding-right:1.25rem}.md\:px-0{padding-left:0px;padding-right:0px}.md\:py-3{padding-top:0.75rem;padding-bottom:0.75rem}.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}.md\:py-64{padding-top:16rem;padding-bottom:16rem}.md\:px-16{padding-left:4rem;padding-right:4rem}.md\:pt-12{padding-top:3rem}.md\:pl-0{padding-left:0px}.md\:pr-3{padding-right:0.75rem}.md\:pr-12{padding-right:3rem}.md\:text-center{text-align:center}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:font-medium{font-weight:500}.md\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.md\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}}@media (min-width: 1024px){.lg\:absolute{position:absolute}.lg\:left-1\/2{left:50%}.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:mr-8{margin-right:2rem}.lg\:mb-8{margin-bottom:2rem}.lg\:mt-24{margin-top:6rem}.lg\:mb-0{margin-bottom:0px}.lg\:ml-0{margin-left:0px}.lg\:-ml-48{margin-left:-12rem}.lg\:-ml-24{margin-left:-6rem}.lg\:-mb-36{margin-bottom:-9rem}.lg\:h-full{height:100%}.lg\:h-8{height:2rem}.lg\:w-1\/2{width:50%}.lg\:w-screen{width:100vw}.lg\:w-auto{width:auto}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-start{align-items:flex-start}.lg\:items-end{align-items:flex-end}.lg\:items-center{align-items:center}.lg\:justify-center{justify-content:center}.lg\:gap-x-24{column-gap:6rem}.lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.lg\:px-10{padding-left:2.5rem;padding-right:2.5rem}.lg\:py-16{padding-top:4rem;padding-bottom:4rem}.lg\:px-20{padding-left:5rem;padding-right:5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pb-40{padding-bottom:10rem}.lg\:pt-24{padding-top:6rem}.lg\:pr-16{padding-right:4rem}.lg\:pr-20{padding-right:5rem}.lg\:pl-10{padding-left:2.5rem}.lg\:pr-0{padding-right:0px}.lg\:text-left{text-align:left}.lg\:text-base{font-size:1rem;line-height:1.5rem}.lg\:text-lg{font-size:1.125rem;line-height:1.75rem}.lg\:text-7xl{font-size:4.5rem;line-height:1}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-6xl{font-size:3.75rem;line-height:1}.lg\:text-3xl{font-size:1.875rem;line-height:2.25rem}.lg\:leading-tight{line-height:1.25}.lg\:opacity-80{opacity:0.8}.lg\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}}@media (min-width: 1280px){.xl\:col-span-2{grid-column:span 2 / span 2}.xl\:col-start-2{grid-column-start:2}.xl\:col-start-3{grid-column-start:3}.xl\:col-start-4{grid-column-start:4}.xl\:row-start-2{grid-row-start:2}.xl\:row-start-4{grid-row-start:4}.xl\:row-start-1{grid-row-start:1}.xl\:row-start-3{grid-row-start:3}.xl\:-ml-12{margin-left:-3rem}.xl\:-mb-28{margin-bottom:-7rem}.xl\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.xl\:bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.xl\:bg-transparent{background-color:transparent}.xl\:px-0{padding-left:0px;padding-right:0px}.xl\:px-16{padding-left:4rem;padding-right:4rem}.xl\:text-xl{font-size:1.25rem;line-height:1.75rem}.xl\:text-7xl{font-size:4.5rem;line-height:1}.xl\:leading-tight{line-height:1.25}}@media (min-width: 1536px){.\32xl\:bg-inherit{background-color:inherit}.\32xl\:bg-current{background-color:currentColor}.\32xl\:bg-transparent{background-color:transparent}.\32xl\:bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}}</style>    <link rel="stylesheet" href="">
+</head>
+<body>
+    <section class="relative w-full h-auto bg-black" data-tails-scripts="//unpkg.com/alpinejs">
+    <div class="relative z-40 h-full px-10 mx-auto max-w-7xl">
 
-            <div class="flex flex-col items-center h-full pt-16 pb-56 lg:flex-row">
+        <nav x-data="{ mobile: false }" class="relative z-40 flex items-center justify-between h-24 mx-auto md:px-0 lg:px-10 max-w-7xl">
+            <div class="relative z-20 flex items-center justify-between w-full md:w-auto">
+                <div>
+                    <a href="#_" class="text-lg font-semibold text-white md:text-xl">
+                        <a href="#_" class="flex items-center font-bold text-white lg:w-auto title-font lg:items-center lg:justify-center md:mb-0">
+                            <span class="text-xl leading-none select-none">Marketminds<span class="text-yellow-300">.</span></span>
+                        </a>
+                    </a>
+                </div>
 
-                <div class="flex flex-col items-start w-full mb-16 md:items-center lg:pr-12 lg:items-start lg:w-1/2 lg:mb-0">
+                <!-- Mobile menu button -->
+                <div @click="mobile = !mobile" class="flex md:hidden">
+                    <button type="button" class="text-gray-200 hover:text-gray-100 focus:outline-none focus:text-gray-100" aria-label="toggle menu">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                        </path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
 
-                    <h2 class="invisible text-sm font-semibold tracking-wide text-gray-700 uppercase transition-none duration-700 ease-out transform translate-y-12 opacity-0 sm:text-base lg:text-sm xl:text-base" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "scale-110": "scale-100", "opacity-0": "opacity-100" }'>{{ theme('home_headline') }}</h2>
-                    <h1 class="invisible pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent transition-none duration-700 ease-out delay-150 transform translate-y-12 opacity-0 bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 scale-10 md:my-5 sm:leading-none lg:text-5xl xl:text-6xl" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "scale-110": "scale-100", "opacity-0": "opacity-100" }'>{{ theme('home_subheadline') }}</h1>
-                    <p class="invisible max-w-2xl mt-0 text-base text-left text-gray-600 transition-none duration-700 ease-out delay-300 transform translate-y-12 opacity-0 md:text-center lg:text-left sm:mt-2 md:mt-0 sm:text-base lg:text-lg xl:text-xl" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "scale-110": "scale-100", "opacity-0": "opacity-100" }'>{{ theme('home_description') }}</p>
-                    <div class="invisible w-full mt-5 transition-none duration-700 ease-out transform translate-y-12 opacity-0 delay-450 sm:mt-8 sm:flex sm:justify-center lg:justify-start sm:w-auto" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-                        <div class="rounded-md">
-                            <a href="{{ theme('home_cta_url') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent rounded-md bg-wave-500 hover:bg-wave-600 focus:outline-none focus:border-wave-600 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">
-                                {{ theme('home_cta') }}
-                            </a>
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div :class="{ 'hidden' : !mobile, 'flex': mobile }" class="fixed top-0 left-0 z-10 items-center justify-center hidden w-full h-full mt-24 font-semibold bg-black select-none md:bg-transparent md:mt-0 md:absolute min-h-auto md:min-w-none min-w-screen md:flex">
+                <div class="flex flex-col items-center justify-start w-full h-full mt-4 ml-0 space-y-2 transform md:justify-center md:-ml-20 lg:ml-0 md:mt-0 md:flex-row md:space-x-6 lg:space-x-8 md:space-y-0">
+                    <div x-data="{ isOpen: false }" @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="relative flex items-center flex-shrink-0 w-full h-12 pl-10 border-t border-gray-800 md:border-0 md:pl-0 md:h-full md:w-auto">
+                        <div class="relative z-10 flex items-center space-x-1 text-gray-300 cursor-pointer hover:text-gray-100 focus:outline-none">
+                            <span>Product</span>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
                         </div>
-                        <div class="mt-3 sm:mt-0 sm:ml-3">
-                            <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border-2 border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 md:py-4 md:text-lg md:px-10">
-                                Learn More
+
+                        <div x-show="isOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute top-0 left-0 z-20 w-full mt-12 -ml-0 overflow-hidden transform bg-black border-2 border-gray-900 rounded-lg shadow-lg md:mt-24 lg:left-1/2 lg:-ml-48 md:w-96">
+
+                            <a href="#_" class="block p-6 pr-0 text-base text-gray-300 cursor-pointer hover:bg-gray-900 hover:text-gray-100">
+                                <span class="flex items-start space-x-1 md:space-x-3">
+                                    <svg class="flex-shrink-0 w-8 h-8 mt-1 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                                </svg>
+                                    <span class="flex flex-col">
+                                        <span>Drag'n Drop</span>
+                                        <span class="text-xs -mt-0.5 font-normal text-gray-400">Simple drag'n drop tailwind page creator.</span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a href="#_" class="block p-6 pr-0 text-base text-gray-300 cursor-pointer hover:bg-gray-900 hover:text-gray-100">
+                                <span class="flex items-start space-x-4">
+                                    <svg class="flex-shrink-0 w-8 h-8 mt-1 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                </svg>
+                                    <span class="flex flex-col">
+                                        <span>Premium Tools</span>
+                                        <span class="text-xs -mt-0.5 font-normal text-gray-400">Gain access to the ultimate set of tools.</span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a href="#_" class="block p-6 pr-0 text-base text-gray-300 cursor-pointer hover:bg-gray-900 hover:text-gray-100">
+                                <span class="flex items-start space-x-4">
+                                    <svg class="flex-shrink-0 w-8 h-8 mt-1 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                                    <span class="flex flex-col">
+                                        <span>Community</span>
+                                        <span class="text-xs -mt-0.5 font-normal text-gray-400">A community of creators like yourself.</span>
+                                    </span>
+                                </span>
                             </a>
                         </div>
                     </div>
-                </div>
+                    <a href="#_" class="flex items-center w-full h-12 py-3 pl-10 text-gray-300 border-t border-gray-800 md:w-auto md:pl-0 md:border-0 hover:text-gray-100 md:h-full hover:underline">Pricing</a>
+                    <div x-data="{ isOpen: false }" @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="relative flex items-center w-full h-12 border-t border-gray-800 md:border-0 md:w-auto md:h-full">
+                        <div class="relative z-10 flex items-center w-full pl-10 space-x-1 text-gray-300 cursor-pointer md:w-auto md:pl-0 hover:text-gray-200 focus:outline-none">
+                            <span>Features</span>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        </div>
 
-                <div class="flex w-full mb-16 lg:w-1/2 lg:mb-0">
+                        <div x-show="isOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute top-0 left-0 z-20 w-full mt-12 -ml-0 overflow-hidden transform bg-black border-2 border-gray-800 rounded-lg shadow-lg md:mt-24 lg:left-1/2 lg:-ml-24 md:w-48">
 
-                    <div class="relative invisible transition-none duration-1000 delay-100 transform translate-x-12 opacity-0" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-x-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-                        <img src="{{ Voyager::image(theme('home_promo_image')) }}" class="w-full max-w-3xl sm:w-auto">
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize cursor-pointer hover:bg-gray-900 hover:text-gray-200">
+                                Design Faster
+                            </a>
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize hover:bg-gray-900 hover:text-gray-200">
+                                Easily Export
+                            </a>
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize hover:bg-gray-900 hover:text-gray-200">
+                                Unlimited Combos
+                            </a>
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize hover:bg-gray-900 hover:text-gray-200">
+                                And More
+                            </a>
+                        </div>
+                    </div>
+                    <div x-data="{ isOpen: false }" @mouseenter="isOpen = true" @mouseleave="isOpen = false" class="relative flex items-center w-full h-12 border-t border-gray-800 md:border-0 md:w-auto md:h-full">
+                        <div class="relative z-10 flex items-center w-full pl-10 space-x-1 text-gray-300 cursor-pointer md:w-auto md:pl-0 hover:text-gray-100 focus:outline-none">
+                            <span>Resources</span>
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        </div>
+
+                        <div x-show="isOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute top-0 left-0 z-20 w-full mt-12 -ml-0 overflow-hidden transform bg-black border-2 border-gray-800 rounded-lg shadow-lg md:mt-24 lg:-ml-24 lg:left-1/2 md:w-48">
+
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize cursor-pointer hover:bg-gray-900 hover:text-gray-100">
+                                About Us
+                            </a>
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize hover:bg-gray-900 hover:text-gray-100">
+                                Press Release
+                            </a>
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize hover:bg-gray-900 hover:text-gray-100">
+                                Contact Us
+                            </a>
+                            <a href="#_" class="block p-4 px-5 text-sm text-gray-300 capitalize hover:bg-gray-900 hover:text-gray-100">
+                                Our Blog
+                            </a>
+                        </div>
                     </div>
 
                 </div>
             </div>
+
+            <div class="absolute z-20 flex-col justify-center hidden pr-5 mt-4 space-y-8 md:flex md:relative md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0">
+                <a class="flex-shrink-0 font-semibold text-gray-200 hover:underline" href="#_">Login</a>
+
+                <a href="#_" class="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-gray-200 capitalize bg-transparent rounded-lg md:text-sm md:py-3 md:px-6 md:font-medium md:text-center md:text-white md:bg-gray-900 md:mx-0">
+                    Sign up
+                </a>
+            </div>
+        </nav>
+
+        <div class="flex flex-col items-center justify-center w-full h-full py-32 -mt-20 sm:py-48 md:py-64">
+            <h1 class="mb-20 text-5xl font-extrabold leading-tight text-left text-white sm:text-center lg:text-7xl lg:leading-tight">Advertising and Marketing is hard. <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-400 to-pink-400">Let MarketMinds do the hard work for you.</span> <br class="hidden md:block"> </h1>
+            <a href="#_" class="relative w-full group sm:w-auto">
+                <span class="absolute top-0 left-0 w-full h-full text-transparent border-2 border-white rounded">Try Free for 14-Days</span>
+                <span class="px-8 inline-block bg-gradient-to-br sm:w-auto w-full text-center from-yellow-200 font-semibold via-red-300 to-pink-400 relative transition-all ease-linear duration-150 transform group-hover:-translate-y-1.5 group-hover:translate-x-1.5 -translate-y-2.5 text-lg rounded translate-x-2 py-4">Try Free for 14-Days</span>
+            </a>
+            <p class="flex items-center mt-4 text-xs text-gray-400">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Free to Try. No Credit Card Required.</span>
+            </p>
+        </div>
+    </div>
+    <img class="absolute bottom-0 left-0 object-cover w-full" src="http://devdojo.com.s3.us-east-1.amazonaws.com/tails/images/mesh-bg.svg">
+    <div class="absolute bottom-0 left-0 z-30 w-full h-full bg-bottom bg-cover" style="backgrond-image:url('http://devdojo.com.s3.us-east-1.amazonaws.com/tails/images/mesh-bg.svg')"></div>
+</section><section class="bg-black">
+    <div class="relative px-16 pt-20 pb-32 mx-auto max-w-7xl xl:px-16">
+        <svg class="relative z-10 w-16 mb-12 text-yellow-300 transform opacity-100 fill-current sm:w-20 -rotate-0 rotate rotate-3" data-primary="yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 46"><defs/><g  fill-rule="nonzero"><path d="M46.651 2.666c1.892-.812 1.06-1.401-1.337-1.81A4.827 4.827 0 0044.323 0a3.914 3.914 0 00-.614.64C34.376-.395 11.639.36 8.676 1.976 6.99 1.437 1.364 9.542.344 13.552c-.436.1-.436.632-.12 1.487a.84.84 0 00.1.28v-.05a2.8 2.8 0 00.247.668h.06c2.814 5.749 14.356 19.796 15 20.673l-.149-.158c2.418 2.587 3.963 5.547 6.291 8.17 2.626 2.213 3.478 1.437 3.399-.065 2.784-1.171 3.289-3.73 4.775-5.655 5.608-7.904 14.742-14.651 19.498-22.763a2.347 2.347 0 00-.09-.575c1.725-2.429-.296-9.018-2.704-12.898zM38.25 24.093c-4.38 5.863-12.355 11.432-13.693 18.15-.33-.903-.903-1.75-1.684-2.493C15.987 31.616 10.4 22.828 3.088 14.931c3.101-1.997 3.636-6.021 5.469-8.615l-.09.187.199-.41-.06.13.08-.151c.31-1.051.463-2.123.455-3.198.876.312 1.796.553 2.745.719 10.333-.633 20.805-.144 31.129-.417.198 1.71 1.387 3.514 1.982 5.094 0-.057 0-.122-.08-.18 1.11 2.243.803 4.937 2.616 6.92-2.953 1.337-8.342 8.048-9.283 9.083zM7.5 14.505v-.01.01z"/><path d="M9.567 12.925c-.022.243.175.468.486.556 0 .065.05.13.08.094l.139-.05h.069c-1.015.233-1.858.754-2.341 1.445.908.243 1.84.436 2.787.578.208.5.484.985.824 1.445v.094-.036c.387.607.763 1.214 1.16 1.814v-.072c.516.816.992 1.64 1.548 2.457.555.817 1.13 1.9 1.736 2.782a.241.241 0 01-.05-.08c1.587 2.169 2.599 4.59 4.444 6.635 3.482 2.002-.536-3.874-1.2-4.777-1.101-1.662-2.232-3.324-3.294-5-.892-1.446-1.845-2.892-2.787-4.337-.149-.354-.298-.65-.446-.925 2.975-.152 5.951-.455 8.927-.513 3.849-.145 7.737 0 11.606 0-.466 1.604-.526 4.025-.992 4.85-.387 3.403-3.968 7.096-2.46 10.37.605-.477 1.029-1.06 1.23-1.692 1.21-4.43 3.918-8.99 3.75-13.535 2.579.03 5.159-.045 7.727-.224 3.65-.853 3.134-2.32-.546-2.349h.218c-2.55.05-5.098.058-7.648.05a27.367 27.367 0 00-3.095-5.181.511.511 0 01-.089-.13c-1.408 1.257.308 3.714 1.597 5.304-4.85 0-9.7 0-14.551.217h.218c-2.113.333-5.168.116-7.53.564.165-.11.255-.265.249-.427a.376.376 0 000-.151c2.48-2.212 7.241-8.166 3.115-6.367l-4.88 6.59zm3.68 3.526a.19.19 0 010 .065.285.285 0 010-.08v.015zM11.5 17.505v-.01z"/><path d="M14.499 21.55v-.1a.54.54 0 010 .1zM41.874 10c.462-1.423-.366-2.884-2.197-3.876A.87.87 0 0139.522 6c-1.373.757.287 2.644 1.266 3.49.303.209.671.382 1.086.51zM40.5 9.505v-.01z"/></g></svg>
+
+        <div class="relative z-20">
+            <h3 class="text-5xl font-bold leading-tight text-left text-white md:text-6xl lg:text-7xl xl:text-7xl xl:leading-tight">Every great design begins with an even greater story...</h3>
+            <div class="flex flex-col mt-14 sm:flex-row sm:items-center">
+                <p class="text-xl font-normal text-left text-yellow-300" data-primary="yellow-400">Use our designs to tell your story</p>
+                <div class="flex mt-5 space-x-1 sm:mt-1 sm:ml-3">
+                    <div class="w-10 h-2 bg-yellow-300 rounded-full opacity-100" data-primary="yellow-400"></div>
+                    <div class="w-8 h-2 bg-yellow-300 rounded-full opacity-75" data-primary="yellow-400"></div>
+                    <div class="w-4 h-2 bg-yellow-300 rounded-full opacity-50" data-primary="yellow-400"></div>
+                    <div class="w-3 h-2 bg-yellow-300 rounded-full opacity-25" data-primary="yellow-400"></div>
+                    <div class="w-2 h-2 bg-yellow-300 rounded-full opacity-10" data-primary="yellow-400"></div>
+                    <div class="w-2 h-2 bg-yellow-300 rounded-full opacity-5" data-primary="yellow-400"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 mt-24 gap-14 lg:grid-cols-3">
+            <div class="flex text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-20 h-20 mr-8 text-yellow-300 stroke-current" data-primary="yellow-400" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 11v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" /><path d="M13 13l9 3l-4 2l-2 4l-3 -9" /><line x1="3" y1="3" x2="3" y2="3.01" /><line x1="7" y1="3" x2="7" y2="3.01" /><line x1="11" y1="3" x2="11" y2="3.01" /><line x1="15" y1="3" x2="15" y2="3.01" /><line x1="3" y1="7" x2="3" y2="7.01" /><line x1="3" y1="11" x2="3" y2="11.01" /><line x1="3" y1="15" x2="3" y2="15.01" /></svg>
+                <div class="relative space-y-2">
+                    <h4 class="text-xl font-bold leading-relaxed">140+ hand-crafted designs & templates</h4>
+                    <p class="text-lg text-gray-300">Hundreds of designs to build amazing landing pages for your application.
+                </div>
+            </div>
+
+            <div class="flex text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-20 h-20 mr-8 text-yellow-300 stroke-current" data-primary="yellow-400" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3" /></svg>
+                <div class="relative space-y-2">
+                    <h4 class="text-xl font-bold leading-relaxed">Easily import & export into any existing app</h4>
+                    <p class="text-lg text-gray-300">All templates can be easily be exported and imported into any of your applications.
+                </div>
+            </div>
+
+            <div class="flex text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-20 h-20 mr-8 text-yellow-300 stroke-current" data-primary="yellow-400" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2" /><path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9" /><path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12" /><line x1="17" y1="17" x2="17" y2="17.01" /></svg>
+                <div class="relative space-y-2">
+                    <h4 class="text-xl font-bold leading-relaxed">Customize and modify to make it your own</h4>
+                    <p class="text-lg text-gray-300">Change the text, color, font, and many other aspects to make it your own.
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="bg-gray-100">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+            <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+                <svg class="h-12 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 100"><path fill="none" d="M0 0h266v100H0z"/><path d="M140.021 49.597c-1.784 0-3.07.585-4.374 1.181v13.486c1.249.119 1.965.119 3.15.119 4.282 0 4.869-1.961 4.869-4.699v-6.441c0-2.022-.671-3.646-3.645-3.646zm-28.438-.736c-2.971 0-3.649 1.631-3.649 3.651v1.135h7.294v-1.135c0-2.02-.678-3.651-3.645-3.651zm-55.09 14.037c0 1.598.754 2.428 2.418 2.428 1.785 0 2.842-.582 4.145-1.18v-3.199h-3.903c-1.848 0-2.66.344-2.66 1.951zm111.191-13.301c-2.976 0-4.007 1.624-4.007 3.646v7.379c0 2.027 1.031 3.656 4.007 3.656 2.968 0 4.007-1.629 4.007-3.656v-7.379c-.001-2.022-1.04-3.646-4.007-3.646zM41.909 71.172h-8.748V49.998H28.79v-7.296h4.372V38.32c0-5.953 2.467-9.492 9.479-9.492h5.838v7.298H44.83c-2.73 0-2.91 1.02-2.91 2.923l-.011 3.652h6.61l-.773 7.296h-5.837v21.175zm29.897.055h-7.291l-.315-1.844c-3.329 1.844-6.3 2.143-8.26 2.143-5.347 0-8.193-3.572-8.193-8.512 0-5.828 3.321-7.908 9.262-7.908h6.047v-1.26c0-2.975-.341-3.848-4.916-3.848h-7.48l.731-7.296h8.176c10.038 0 12.239 3.171 12.239 11.203v17.322zm24.793-20.694c-4.537-.778-5.84-.949-8.023-.949-3.921 0-5.106.865-5.106 4.195v6.299c0 3.33 1.185 4.199 5.106 4.199 2.183 0 3.486-.174 8.023-.955v7.117c-3.974.891-6.563 1.125-8.751 1.125-9.392 0-13.125-4.939-13.125-12.074v-5.111c0-7.141 3.733-12.089 13.125-12.089 2.188 0 4.777.235 8.751 1.13v7.113zm27.376 8.957h-16.042v.588c0 3.33 1.186 4.199 5.106 4.199 3.524 0 5.675-.174 10.204-.955v7.117c-4.368.891-6.644 1.125-10.929 1.125-9.393 0-13.128-4.939-13.128-12.074v-5.844c0-6.243 2.771-11.356 12.396-11.356s12.393 5.054 12.393 11.356v5.844zm28.437.135c0 6.896-1.971 11.926-13.911 11.926-4.312 0-6.841-.379-11.6-1.111V31.02l8.745-1.459V43.35c1.89-.702 4.336-1.059 6.562-1.059 8.746 0 10.203 3.921 10.203 10.222v7.112zm28.033.15c0 5.949-2.456 11.719-12.732 11.719-10.281 0-12.783-5.77-12.783-11.719v-5.744c0-5.952 2.502-11.723 12.783-11.723 10.276 0 12.732 5.771 12.732 11.723v5.744zm28.014 0c0 5.949-2.459 11.719-12.733 11.719-10.281 0-12.783-5.77-12.783-11.719v-5.744c0-5.952 2.502-11.723 12.783-11.723 10.274 0 12.733 5.771 12.733 11.723v5.744zm28.749 11.397h-9.479l-8.017-13.383v13.383h-8.748V31.019l8.748-1.459v25.849l8.017-12.707h9.479l-8.752 13.867 8.752 14.603zm-41.512-21.575c-2.971 0-4.002 1.624-4.002 3.646v7.379c0 2.027 1.031 3.656 4.002 3.656 2.967 0 4.017-1.629 4.017-3.656v-7.379c0-2.022-1.05-3.646-4.017-3.646zm46.505 16.581c1.473 0 2.646 1.201 2.646 2.701 0 1.523-1.174 2.711-2.657 2.711-1.476 0-2.673-1.188-2.673-2.711 0-1.5 1.197-2.701 2.673-2.701h.011zm-.011.42c-1.187 0-2.158 1.021-2.158 2.281 0 1.283.972 2.291 2.169 2.291 1.198.012 2.155-1.008 2.155-2.279s-.957-2.293-2.155-2.293h-.011zm-.503 3.853h-.48v-3.014c.252-.035.492-.07.852-.07.456 0 .754.096.937.227.177.133.272.336.272.623 0 .398-.262.637-.585.734v.023c.263.049.442.287.503.73.07.469.143.648.19.746h-.503c-.071-.098-.144-.373-.204-.77-.07-.383-.264-.527-.648-.527h-.333v1.298zm0-1.668h.348c.394 0 .729-.145.729-.518 0-.264-.19-.527-.729-.527-.157 0-.266.012-.348.023v1.022z" /></svg>
+            </div>
+            <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+                <svg class="h-10 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 316 60"><g transform="translate(9.259 4.552) scale(.4941)"><path d="M52.1 102.1V82.5c20.8 0 36.8-20.6 28.9-42.4-3-8.1-9.4-14.6-17.5-17.5-21.8-7.9-42.4 8.1-42.4 28.9H1.5c0-33.1 32-58.9 66.7-48.1 15.2 4.7 27.2 16.8 31.9 31.9 10.8 34.8-14.9 66.8-48 66.8z"/><path d="M32.6 63h19.5v19.5H32.6zm-15 34.5v-15h15v15h-15zM5 70h12.6v12.5H5z" fill-rule="evenodd"/><path d="M181.5 30.2c-5.8-4-13-6.1-21.4-6.1h-18.3v58.1h18.3c8.4 0 15.6-2.1 21.4-6.4 3.2-2.2 5.7-5.4 7.4-9.3s2.6-8.5 2.6-13.7c0-5.1-.9-9.7-2.6-13.6-1.7-3.8-4.2-6.9-7.4-9zm-29 3.8h5.8c6.4 0 11.7 1.3 15.7 3.7 4.4 2.7 6.7 7.8 6.7 15.1 0 7.6-2.3 12.9-6.7 15.8-3.8 2.5-9.1 3.8-15.6 3.8h-5.8V34z"/><use xlink:href="#A"/><path d="M199 41.3h10.3v41H199zm47.8 3.4c-3.1-2.8-6.6-4.4-10.3-4.4-5.7 0-10.4 2-14.1 5.8s-5.5 8.8-5.5 14.7c0 5.8 1.8 10.7 5.5 14.7 3.7 3.8 8.4 5.8 14.1 5.8 4 0 7.4-1.1 10.2-3.3v1c0 3.4-.9 6-2.7 7.9-1.8 1.8-4.3 2.7-7.4 2.7-4.8 0-7.7-1.9-11.4-6.8l-7 6.7.2.3c1.5 2.1 3.8 4.2 6.9 6.2s6.9 3 11.5 3c6.1 0 11.1-1.9 14.7-5.6 3.7-3.7 5.5-8.7 5.5-14.9V41.3h-10.1v3.4zm-2.7 24.2c-1.8 2-4.1 3-7.1 3s-5.3-1-7-3c-1.8-2-2.7-4.7-2.7-8s.9-6.1 2.7-8.1 4.1-3.1 7-3.1c3 0 5.3 1 7.1 3.1 1.8 2 2.7 4.8 2.7 8.1s-1 6-2.7 8zm21.6-27.6H276v41h-10.3z"/><use xlink:href="#A" x="66.7"/><path d="M298.6 30.3h-10.1v11.1h-5.9v9.4h5.9v17c0 5.3 1.1 9.1 3.2 11.3s5.8 3.3 11.1 3.3c1.7 0 3.4-.1 5-.2h.5v-9.4l-3.5.2c-2.5 0-4.1-.4-4.9-1.3s-1.2-2.7-1.2-5.4V50.7h9.6v-9.4h-9.6v-11zm57.9-6.2h10.3v58.1h-10.3zm114.4 43.5c-1.8 2.1-3.7 3.9-5.2 4.8-1.4.9-3.2 1.4-5.3 1.4-3 0-5.5-1.1-7.5-3.4s-3-5.2-3-8.7 1-6.4 2.9-8.6c2-2.3 4.4-3.4 7.4-3.4 3.3 0 6.8 2.1 9.8 5.6l6.8-6.5c-4.4-5.8-10.1-8.5-16.9-8.5-5.7 0-10.6 2.1-14.6 6.1s-6 9.2-6 15.3 2 11.2 6 15.3 8.9 6.1 14.6 6.1c7.5 0 13.5-3.2 17.5-9.1l-6.5-6.4zM513.2 47c-1.5-2-3.5-3.7-5.9-4.9-2.5-1.2-5.3-1.8-8.5-1.8-5.8 0-10.5 2.1-14 6.3-3.4 4.2-5.2 9.3-5.2 15.4 0 6.2 1.9 11.3 5.7 15.3 3.7 3.9 8.8 5.9 14.9 5.9 6.9 0 12.7-2.8 16.9-8.4l.2-.3-6.7-6.5c-.6.8-1.5 1.6-2.3 2.4-1 1-2 1.7-3 2.2-1.5.8-3.3 1.1-5.2 1.1-2.9 0-5.2-.8-7-2.5-1.7-1.5-2.7-3.6-2.9-6.2h27.3l.1-3.8c0-2.7-.4-5.2-1.1-7.6-.7-2.3-1.8-4.5-3.3-6.6zm-22.5 9.7c.5-2 1.4-3.6 2.7-4.9 1.4-1.4 3.2-2.1 5.4-2.1 2.5 0 4.4.7 5.7 2.1 1.2 1.3 1.9 2.9 2.1 4.8h-15.9zm62.1-12.3c-3.1-2.7-7.4-4-12.8-4-3.4 0-6.6.8-9.5 2.2-2.7 1.4-5.3 3.6-7 6.6l.1.1 6.6 6.3c2.7-4.3 5.7-5.8 9.7-5.8 2.2 0 3.9.6 5.3 1.7s2 2.6 2 4.4v2c-2.6-.8-5.1-1.2-7.6-1.2-5.1 0-9.3 1.2-12.4 3.6s-4.7 5.9-4.7 10.2c0 3.8 1.3 7 4 9.3 2.7 2.2 6 3.4 9.9 3.4s7.6-1.6 10.9-4.3v3.4h10.1V55.9c.2-4.9-1.4-8.8-4.6-11.5zm-18.3 22.2c1.2-.8 2.8-1.2 4.9-1.2 2.5 0 5.1.5 7.8 1.5v4C545 73 542 74 538.3 74c-1.8 0-3.2-.4-4.1-1.2s-1.4-1.7-1.4-3 .6-2.4 1.7-3.2zm62.7-21.4c-2.9-3.2-6.9-4.8-12-4.8-4.1 0-7.4 1.2-9.9 3.5v-2.5h-10.1v41h10.3V59.7c0-3.1.7-5.6 2.2-7.3 1.5-1.8 3.4-2.6 6.1-2.6 2.3 0 4.1.8 5.4 2.3 1.3 1.6 2 3.7 2 6.4v23.7h10.3V58.5c0-5.6-1.4-10.1-4.3-13.3zm-253.6-.8c-3.1-2.7-7.4-4-12.8-4-3.4 0-6.6.8-9.5 2.2-2.7 1.4-5.3 3.6-7 6.6l.1.1 6.6 6.3c2.7-4.3 5.7-5.8 9.7-5.8 2.2 0 3.9.6 5.3 1.7s2 2.6 2 4.4v2c-2.6-.8-5.1-1.2-7.6-1.2-5.1 0-9.3 1.2-12.4 3.6s-4.7 5.9-4.7 10.2c0 3.8 1.3 7 4 9.3 2.7 2.2 6 3.4 9.9 3.4s7.6-1.6 10.9-4.3v3.4h10.1V55.9c.1-4.9-1.5-8.8-4.6-11.5zm-18.3 22.2c1.2-.8 2.8-1.2 4.9-1.2 2.5 0 5.1.5 7.8 1.5v4c-2.2 2.1-5.2 3.1-8.9 3.1-1.8 0-3.2-.4-4.1-1.2s-1.4-1.7-1.4-3 .5-2.4 1.7-3.2zm78.9 16.5c-16.5 0-30-13.4-30-30s13.4-30 30-30c16.5 0 30 13.4 30 30s-13.5 30-30 30zm0-49.3c-10.7 0-19.4 8.7-19.4 19.4s8.7 19.4 19.4 19.4 19.4-8.7 19.4-19.4-8.7-19.4-19.4-19.4z"/></g><defs><path d="M204.3 23.4c-1.8 0-3.3.6-4.5 1.8s-1.9 2.7-1.9 4.4c0 1.8.6 3.3 1.9 4.5 1.2 1.2 2.7 1.9 4.5 1.9s3.3-.6 4.5-1.9c1.2-1.2 1.9-2.8 1.9-4.5 0-1.8-.6-3.3-1.9-4.4-1.2-1.2-2.8-1.8-4.5-1.8z"/></defs></svg>
+            </div>
+            <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+                <svg  class="h-8 mt-2 text-gray-500 fill-current" viewBox="0 0 398 120" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero"><path d="M247.292 94.106C224.124 111.016 190.526 120 161.608 120c-40.544 0-77.046-14.822-104.673-39.476-2.164-1.936-.235-4.583 2.369-3.082 29.806 17.15 66.66 27.475 104.731 27.475 25.677 0 53.906-5.271 79.884-16.163 3.923-1.646 7.21 2.545 3.373 5.352"/><path d="M256.533 82.534c-2.965-3.771-19.551-1.787-27.003-.897-2.254.277-2.605-1.692-.57-3.122 13.233-9.265 34.922-6.587 37.447-3.487 2.54 3.13-.666 24.802-13.073 35.147-1.91 1.59-3.718.744-2.877-1.357 2.782-6.952 9.04-22.505 6.076-26.284zM230.05 13.058V4.063c.015-1.378 1.04-2.29 2.291-2.283l40.493-.007c1.295 0 2.335.94 2.335 2.268v7.726c-.015 1.29-1.113 2.983-3.053 5.668l-20.97 29.843c7.78-.182 16.022.985 23.093 4.939 1.596.897 2.027 2.217 2.152 3.516v9.607c0 1.32-1.457 2.86-2.987 2.057-12.458-6.507-29-7.214-42.776.08-1.405.745-2.884-.765-2.884-2.086v-9.133c0-1.459.03-3.961 1.508-6.186l24.302-34.738h-21.162c-1.295 0-2.327-.927-2.342-2.276zM82.354 69.294H70.042c-1.171-.08-2.108-.956-2.203-2.072l.014-63.006c0-1.262 1.062-2.268 2.38-2.268L81.71 1.94c1.2.059 2.159.963 2.232 2.116v8.221h.234C87.163 4.326 92.8.613 100.39.613c7.708 0 12.539 3.713 15.98 11.664C119.361 4.326 126.14.613 133.393.613c5.175 0 10.804 2.123 14.251 6.893 3.916 5.311 3.111 12.993 3.111 19.755l-.015 39.764c0 1.255-1.061 2.262-2.379 2.262h-12.304c-1.23-.08-2.203-1.05-2.203-2.262l-.007-33.41c0-2.648.234-9.28-.344-11.796-.923-4.246-3.675-5.435-7.24-5.435-2.986 0-6.09 1.985-7.356 5.165-1.266 3.188-1.15 8.484-1.15 12.066v33.403c0 1.255-1.06 2.262-2.378 2.262h-12.297c-1.237-.08-2.21-1.051-2.21-2.262l-.015-33.41c0-7.025 1.142-17.362-7.59-17.362-8.858 0-8.506 10.074-8.506 17.362l-.007 33.403c-.022 1.276-1.084 2.283-2.401 2.283zm227.788-55.82c-9.084 0-9.662 12.328-9.662 20.017s-.117 24.131 9.545 24.131c9.545 0 10.006-13.262 10.006-21.345 0-5.303-.234-11.664-1.845-16.705-1.383-4.377-4.143-6.098-8.044-6.098zM310.025.613c18.284 0 28.173 15.647 28.173 35.533 0 19.222-10.92 34.468-28.173 34.468-17.933 0-27.712-15.647-27.712-35.132C282.305 15.86 292.2.612 310.025.612zm51.882 68.681h-12.275c-1.23-.08-2.211-1.05-2.211-2.261l-.015-63.028c.103-1.16 1.12-2.057 2.365-2.057l11.426-.008c1.076.059 1.961.788 2.188 1.766v9.636h.234c3.448-8.622 8.279-12.73 16.785-12.73 5.519 0 10.92 1.992 14.375 7.427C398 13.072 398 21.556 398 27.662v39.64c-.14 1.117-1.142 1.985-2.364 1.985h-12.349c-1.141-.073-2.064-.912-2.188-1.984V33.097c0-6.894.805-16.968-7.708-16.968-2.993 0-5.753 1.984-7.13 5.033-1.72 3.845-1.953 7.69-1.953 11.935v33.928c-.03 1.262-1.091 2.27-2.401 2.27zm-151.715-.16c-.813.73-1.991.78-2.913.284-4.092-3.385-4.824-4.953-7.064-8.177-6.756 6.864-11.543 8.921-20.305 8.921-10.372 0-18.438-6.376-18.438-19.134 0-9.965 5.424-16.742 13.139-20.061 6.683-2.925 16.023-3.458 23.167-4.253v-1.598c0-2.925.234-6.375-1.5-8.9-1.501-2.26-4.378-3.195-6.918-3.195-4.692 0-8.871 2.4-9.904 7.375-.212 1.11-1.024 2.204-2.137 2.262l-11.938-1.291c-1.01-.234-2.13-1.029-1.838-2.568C166.288 4.362 179.37 0 191.087 0c5.995 0 13.827 1.59 18.556 6.113 5.995 5.58 5.416 13.021 5.416 21.126v19.127c0 5.756 2.401 8.28 4.648 11.373.79 1.116.967 2.444-.036 3.26-2.518 2.102-6.983 5.968-9.443 8.15l-.036-.015zm-12.414-29.931v-2.656c-8.908 0-18.322 1.897-18.322 12.35 0 5.319 2.767 8.908 7.488 8.908 3.455 0 6.566-2.123 8.528-5.58 2.423-4.254 2.306-8.237 2.306-13.022zM48.72 69.133c-.813.73-1.991.781-2.913.285-4.092-3.385-4.824-4.953-7.064-8.177-6.763 6.864-11.55 8.921-20.305 8.921C8.06 70.162 0 63.786 0 51.028c0-9.965 5.417-16.742 13.139-20.061 6.683-2.925 16.015-3.458 23.16-4.253v-1.598c0-2.925.233-6.375-1.501-8.9-1.5-2.26-4.377-3.195-6.91-3.195-4.7 0-8.879 2.4-9.904 7.375-.212 1.11-1.024 2.204-2.137 2.262L3.91 21.367c-1.01-.234-2.13-1.029-1.845-2.568C4.81 4.362 17.89.007 29.615.007c5.995 0 13.827 1.59 18.556 6.113 5.995 5.581 5.416 13.022 5.416 21.126v19.128c0 5.755 2.401 8.28 4.648 11.372.79 1.116.967 2.444-.036 3.261-2.518 2.101-6.99 5.967-9.45 8.148l-.03-.021zm-12.422-29.93v-2.656c-8.908 0-18.32 1.897-18.32 12.35 0 5.319 2.766 8.908 7.487 8.908 3.462 0 6.573-2.123 8.528-5.58 2.422-4.254 2.305-8.237 2.305-13.022z"/></g></svg>
+            </div>
+            <div class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
+                <svg class="h-5 mt-1 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.7 36.3"><g><path class="st0" d="M238.1 14.4v21.9h7V21.7h25.6v14.6h7V14.4h-39.6m6.2-7.1h27c3.8-.7 6.5-4.1 7.3-7.3H237c.8 3.2 3.6 6.5 7.3 7.3m-27.5 29c3.5-1.5 5.4-4.1 6.2-7.1h-31.5V.1h-7.1v36.2h32.4M131.9 7.2h25c3.8-1.1 6.9-4 7.7-7.1H125v21.4h32.4V29H132c-4 1.1-7.4 3.8-9.1 7.3h41.5V14.4H132l-.1-7.2m-61.6.1h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.3h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3m0 14.7h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.6 7.4 7.3M0 .1c.8 3.2 3.6 6.4 7.3 7.2h11.4l.6.2v28.7h7.1V7.5l.6-.2h11.4c3.8-1 6.5-4 7.3-7.2V0L0 .1"/></g></svg>
+            </div>
+            <div class="flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
+                <svg class="h-8 text-gray-500 fill-current" viewBox="0 0 2270 546" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M888.413 394.397l-31.127 144.717h-71.593L903.977 14.642h84.81l111.28 524.472h-72.371l-30.35-144.717H888.413zm100.373-58.364l-24.124-125.3c-7.003-35.797-14.007-82.463-19.441-119.828h-3.126c-5.434 38.13-13.242 86.365-20.22 119.827l-24.902 125.301h91.813zM1373.34.648v441.205c0 28.806 1.556 70.828 3.1 97.274h-63.02l-4.67-45.9h-2.334c-12.451 26.445-41.244 52.138-79.362 52.138-70.037 0-112.837-76.275-112.837-193.755 0-133.848 56.794-196.881 116.728-196.881 30.336 0 54.46 14.02 67.689 42.8h1.556V.648h73.15zm-73.163 304.258c0-6.991 0-15.551-.778-23.359-3.89-34.227-23.345-63.798-49.79-63.798-45.927 0-61.477 63.798-61.477 133.848 0 77.818 20.232 132.278 59.142 132.278 16.342 0 38.118-8.56 50.569-53.681 1.556-6.226 2.334-15.577 2.334-24.111V304.906zm247.399 240.446c-75.471 0-129.957-64.59-129.957-194.52 0-137.752 64.576-196.116 133.835-196.116 74.705 0 128.387 66.924 128.387 194.546 0 150.19-73.927 196.09-131.5 196.09h-.765zm2.321-57.573c45.122 0 55.251-80.153 55.251-137.726 0-56.82-10.116-137.739-56.794-137.739-48.26 0-57.586 80.919-57.586 137.74 0 63.02 10.895 137.725 58.364 137.725h.765zM1723.938.648h73.137V203.74h1.556c19.455-34.227 45.913-49.025 79.375-49.025 64.577 0 105.055 73.15 105.055 189.099 0 135.391-55.25 201.537-117.506 201.537-37.353 0-58.364-20.246-74.719-53.708h-3.086l-3.904 47.47h-63.02c1.556-25.668 3.112-68.468 3.112-97.274V.648zm73.137 404.618c0 8.586.778 17.146 3.113 23.358 11.66 45.926 34.24 55.251 49.012 55.251 43.579 0 59.92-57.572 59.92-135.391 0-72.371-17.106-130.735-60.698-130.735-24.124 0-43.578 28.793-49.025 56.03-1.557 7.781-2.335 17.91-2.335 25.68v105.807h.013zm293.92-40.453c.779 97.273 42.788 121.384 87.145 121.384 26.458 0 49.025-6.213 65.367-14.007l10.895 52.916c-22.568 11.673-56.808 17.912-90.27 17.912-94.925 0-144.73-71.594-144.73-188.321 0-123.732 56.795-199.994 135.392-199.994s115.172 75.484 115.172 170.435c0 18.664-.792 30.35-1.557 40.453l-177.413-.778zm109.712-52.126c.778-66.924-22.567-102.707-51.347-102.707-38.144 0-55.264 55.251-57.586 102.707h108.933z" fill-rule="nonzero"/><path d="M373.462 16.043h218.501v523.07L373.462 16.044zm-153.926 0H.88v523.07l218.657-523.07zm76.976 192.77l139.218 330.3H344.5l-41.633-105.197H200.964l95.548-225.103z"/></g></svg>
+            </div>
+        </div>
+    </div>
+</section><div class="py-10 bg-black sm:py-12 lg:py-16">
+    <div class="px-12 pb-5 mx-auto max-w-screen-2xl md:px-16">
+        <div class="mb-10 md:mb-16">
+            <h2 class="mb-4 text-3xl font-bold text-left text-gray-100 lg:text-5xl md:text-center md:mb-10">Our <span class="relative inline-block text-transparent bg-gradient-to-br from-indigo-300 via-blue-300 to-green-300 bg-clip-text">Awesome
+                    <svg class="absolute hidden w-2/3 h-auto mt-1 text-gray-100 transform translate-x-8 fill-current md:block" viewBox="0 0 76 12" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero"><path d="M71.531 4.853c-2.199-.224-4.183-.188-6.265-.193-4.063-.011-8.125-.88-12.188-.85-9.099.079-18.339-.421-27.47.402-2.697.239-5.391.442-8.061.786-.256.031-.51.063-.767.099-2.505.328-5.775.136-8.265.48-2.192.457-3.891 1.03-5.99.874-.557-.108-1.15-.303-1.484-.698C.312 4.905-.027 4.129.326 3.482c.115-.213.313-.432.527-.629.417-.366.917-.653 1.189-.678 4.692-.5 10.015-.594 14.255-.683 2.093-.042 4.254-.099 6.896-.208 6.104-.156 15.729-.256 21.839-.406 5.339-.135 10.692.609 15.979 1.162 2.01.209 3.276.209 5.078.266.301.004.641.015.99.025 1.781.057 4.989-.224 6.025.317 1.037.547 1.761.604 2.667 1.609.048.991-.317 1.449-.78 1.615-1.079.396-2.068.839-2.907.975-.983.156-1.776.162-1.937-.213-.156-.376-.068-.609.088-.781.271-.281.76-.589 1.198-.797l.098-.203Z"/><path d="M28.744 9.336c1.677-.088 3.364-.203 5.036-.142 2.115.074 3.907.314 6.006.281.708-.009 5.016.005 5.604-.004 1.833-.032 3.636-.026 5.464.025 1.213.036 2.432.109 3.636.251 2.833.333 5.76.557 8.547 1.192.708.162 1.432.297 2.145.167.708-.125 1.792-.5 1.719-1.276-.083-.907-.833-2.036-1.735-2.322-.276-.084-.911-.475-1.192-.533-.265-.052-.5-.238-.745-.27-.578-.078-1.011.188-1.547.318-.625.151-1.979-.272-2.625-.287-2.281-.057-3.609.525-5.891.505-1.348-.01-2.703-.052-4.052-.074-1.295-.021-2.593.017-3.885-.052-.902-.046-1.792-.292-2.687-.312-.767-.016-1.543.125-2.297.276-.645.135-1.355.078-2.01.083-.599.011-1.333-.14-1.891 0-.719.183-1.517.188-2.25.26-1.38.136-2.074-.109-3.448.063-.855.104-1.486.432-2.339.313-.437-.063-1.557.219-1.994.172-.449-.042-.48.28-.885.333-.491.061-.986.047-1.475.067-.208.011-.766-.011-.911.152-.204.224.203.687.509.818 1.121.489 2.74.098 3.922.057.422-.014.845-.035 1.271-.061Z"/></g></svg>
+                </span> Features</h2>
+
+            <p class="max-w-screen-md mx-auto text-left text-gray-300 md:text-lg md:text-center">
+                We pride ourselves in the features that our application provides. We have been trusted by over 500+ companies to take their business to the next level.
+            </p>
         </div>
 
+        <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3 md:gap-12">
+            <!-- feature - start -->
+            <div class="flex gap-4 md:gap-5 bg-gradient-to-br group from-yellow-400 via-red-400 to-pink-400 rounded-2xl p-0.5">
+                <div class="flex gap-4 p-5 bg-gray-900 md:gap-5 bg-opacity-5 rounded-2xl">
+                    <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-white rounded-full md:w-14 md:h-14 bg-gradient-to-br from-yellow-300 via-red-300 to-pink-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
 
-
-    </div>
-
-    <div class="relative z-40 -mt-64">
-
-        <svg viewBox="0 0 120 28" class="-mt-64">
-            <defs>
-                <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-            </defs>
-            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
-            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
-            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
-        </svg>
-    </div>
-
-    {{-- FEATURES SECTION --}}
-    <section class="relative z-40 w-full pt-10 pb-16 lg:pt-5 xl:-mt-24 bg-gradient-to-b from-wave-500 via-wave-600 to-wave-400">
-
-        <div class="absolute top-0 left-0 z-10 w-full h-full transform -translate-x-1/2 opacity-10">
-            <svg class="w-full h-full text-white opacity-25 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205"><defs/><g fill="#FFF" fill-rule="evenodd"><path d="M182.63 37c14.521 18.317 22.413 41.087 22.37 64.545C205 158.68 159.1 205 102.486 205c-39.382-.01-75.277-22.79-92.35-58.605C-6.939 110.58-2.172 68.061 22.398 37a105.958 105.958 0 00-9.15 43.352c0 54.239 39.966 98.206 89.265 98.206 49.3 0 89.265-43.973 89.265-98.206A105.958 105.958 0 00182.629 37z"/><path d="M103.11 0A84.144 84.144 0 01150 14.21C117.312-.651 78.806 8.94 56.7 37.45c-22.105 28.51-22.105 68.58 0 97.09 22.106 28.51 60.612 38.101 93.3 23.239-30.384 20.26-70.158 18.753-98.954-3.75-28.797-22.504-40.24-61.021-28.47-95.829C34.346 23.392 66.723.002 103.127.006L103.11 0z"/><path d="M116.479 13c36.655-.004 67.014 28.98 69.375 66.234 2.36 37.253-24.089 69.971-60.44 74.766 29.817-8.654 48.753-38.434 44.308-69.685-4.445-31.25-30.9-54.333-61.904-54.014-31.003.32-56.995 23.944-60.818 55.28v-1.777C46.99 44.714 78.096 13.016 116.479 13z"/></g></svg>
-        </div>
-
-        <div class="relative z-20 flex flex-col items-start justify-start px-8 mx-auto sm:items-center max-w-7xl xl:px-5">
-            <h2 class="text-4xl font-medium leading-9 text-white">Awesome Features</h2>
-            <p class="mt-4 leading-6 sm:text-center text-wave-200">Wave has some cool features to help you rapidly build your Software as a Service.<br class="hidden md:block"> Here are a few awesome features you're going to love!</p>
-
-            <div class="grid mt-16 gap-y-10 sm:grid-cols-2 sm:gap-x-8 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-4 lg:gap-20">
-                @foreach(config('features') as $feature)
                     <div>
-                        <img src="{{ $feature->image }}" class="w-16 rounded sm:mx-auto">
-                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">{{ $feature->title }}</h3>
-                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">{{ $feature->description }}</p>
-                    </div>
-                @endforeach
-            </div>
-
-        </div>
-    </section>
-
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="bg-gray-100" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 1440 156" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
-        <style type="text/css">
-            .wave-svg{fill:#0069ff;}
-            .wave-svg-lighter{fill:#4c95fe}
-        </style>
-        <g fill-rule="nonzero">
-            <path class="wave-svg" d="M694,94.437587 C327,161.381336 194,153.298248 0,143.434189 L2.01616501e-13,44.1765618 L1440,27 L1440,121 C1244,94.437587 999.43006,38.7246898 694,94.437587 Z" id="Shape" fill="#0069FF" opacity="0.519587054"></path>
-            <path class="wave-svg" d="M686.868924,95.4364002 C416,151.323752 170.73341,134.021565 1.35713663e-12,119.957876 L0,25.1467017 L1440,8 L1440,107.854321 C1252.11022,92.2972893 1034.37894,23.7359827 686.868924,95.4364002 Z" id="Shape" fill="#0069FF" opacity="0.347991071"></path>
-            <path class="wave-svg-lighter" d="M685.6,30.8323303 C418.7,-19.0491687 170.2,1.94304528 0,22.035593 L0,118 L1440,118 L1440,22.035593 C1252.7,44.2273621 1010,91.4098622 685.6,30.8323303 Z" transform="translate(720.000000, 59.000000) scale(1, -1) translate(-720.000000, -59.000000) "></path>
-        </g>
-    </svg>
-
-    <!-- BEGINNING OF TESTIMONIALS SECTION -->
-    <div id="testimonials">
-        <div class="relative flex items-center justify-center pt-32 pb-12 bg-gray-100 md:pb-32 lg:pb-64 min-w-screen">
-            <div class="max-w-6xl px-10 pb-20 mx-auto bg-gray-100">
-                <div class="flex flex-col items-center lg:flex-row">
-                    <div class="flex flex-col justify-center w-full h-full mb-10 lg:pr-8 sm:w-4/5 md:items-center lg:mb-0 lg:items-start md:w-3/5 lg:w-1/2">
-                        <p class="mb-2 text-base font-medium tracking-tight uppercase text-wave-500">Our customers love our product</p>
-                        <h2
-                            class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none lg:text-5xl xl:text-6xl">
-                            Testimonials</h2>
-                        <p class="pr-5 my-6 text-lg text-gray-600 md:text-center lg:text-left">This is an example section of where you will add your testimonials for your Software as a Service.</p>
-                        <a href="#_"
-                            class="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow bg-wave-600 hover:bg-wave-500 focus:outline-none focus:border-wave-700 focus:shadow-outline-wave md:py-4 md:text-lg md:px-10">View
-                            Case Studies</a>
-                    </div>
-                    <div class="w-full sm:w-4/5 lg:w-1/2">
-                        <blockquote class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-8">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Wave allowed me to build the Software as a Service of my dreams!
-                                    </p>
-                                </div>
-
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">Jane Cooper <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 my-5 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-10">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Wave saved us hundreds of development hours. Creating a Software as a Service is now easier than ever with Wave.</p>
-                                </div>
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">John Doe <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&aauto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-10">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">This is the best solution available for creating your own Software as a Service!</p>
-                                </div>
-
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">John Smith <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rrb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&aauto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
+                        <h3 class="mb-2 text-lg font-semibold text-white md:text-xl">Analytics</h3>
+                        <p class="mb-2 text-sm text-red-50">Full analytics so you can get insight to what your customers and users are doing.</p>
                     </div>
                 </div>
             </div>
+            <!-- feature - end -->
 
-            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 w-full" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 1440 126" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
-                <style type="text/css">
-                    .wave-svg-light {
-                        fill: #ffffff;
-                    }
-                </style>
-                <g id="wave" transform="translate(720.000000, 75.000000) scale(1, -1) translate(-720.000000, -75.000000) " fill-rule="nonzero">
-                    <path class="wave-svg-light" d="M694,94.437587 C327,161.381336 194,153.298248 0,143.434189 L2.01616501e-13,44.1765618 L1440,27 L1440,121 C1244,94.437587 999.43006,38.7246898 694,94.437587 Z" id="Shape" fill="#0069FF" opacity="0.519587054"></path>
-                    <path class="wave-svg-light" d="M686.868924,95.4364002 C416,151.323752 170.73341,134.021565 1.35713663e-12,119.957876 L0,25.1467017 L1440,8 L1440,107.854321 C1252.11022,92.2972893 1034.37894,23.7359827 686.868924,95.4364002 Z" id="Shape" fill="#0069FF" opacity="0.347991071"></path>
-                    <path class="wave-svg-light" d="M685.6,30.8323303 C418.7,-19.0491687 170.2,1.94304528 0,22.035593 L0,118 L1440,118 L1440,22.035593 C1252.7,44.2273621 1010,91.4098622 685.6,30.8323303 Z" id="Shape" fill="url(#linearGradient-1)" transform="translate(720.000000, 59.000000) scale(1, -1) translate(-720.000000, -59.000000) "></path>
-                </g>
-            </svg>
+            <!-- feature - start -->
+            <div class="flex gap-4 md:gap-5 cursor-pointer bg-gradient-to-br from-green-400 via-blue-400 to-indigo-400 rounded-2xl p-0.5">
+                <div class="flex gap-4 p-5 bg-gray-900 md:gap-5 bg-opacity-5 rounded-xl">
+                    <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-white rounded-full md:w-14 md:h-14 bg-gradient-to-br from-green-300 via-blue-300 to-indigo-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
 
-        </div>
-    </div>
-    <!-- END OF TESTIMONIALS SECTION -->
-
-    <!-- BEGINNING OF PRICING SECTION -->
-    <div id="pricing" class="relative">
-
-        <div class="relative z-20 px-8 pb-8 mx-auto max-w-7xl xl:px-5">
-            <div class="w-full text-left sm:text-center">
-                <h2 class="pt-12 text-4xl font-extrabold text-gray-900 lg:text-5xl">Example Pricing</h2>
-                <p class="w-full my-1 text-base text-left text-gray-900 opacity-75 sm:my-2 sm:text-center sm:text-xl">It's easy to customize the pricing of your Software as a Service</p>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold text-white md:text-xl">Messaging</h3>
+                        <p class="mb-2 text-sm text-blue-50">Messaging system where your users can communicate and interact together.</p>
+                    </div>
+                </div>
             </div>
+            <!-- feature - end -->
 
-            @include('theme::partials.plans')
+            <!-- feature - start -->
+            <div class="flex gap-4 md:gap-5 cursor-pointer bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 rounded-2xl p-0.5">
+                <div class="flex gap-4 p-5 bg-gray-900 md:gap-5 bg-opacity-5 rounded-xl">
+                    <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-white rounded-full md:w-14 md:h-14 bg-gradient-to-br from-blue-300 via-purple-300 to-pink-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"></path></svg>
+                    </div>
 
-            <p class="w-full my-8 text-left text-gray-500 sm:my-10 sm:text-center">All plans are fully configurable in the Admin Area.</p>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold text-white md:text-xl">Insights</h3>
+                        <p class="mb-2 text-sm text-blue-50">Gain insights into all the events that are fired in your web and mobile applications.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex gap-4 md:gap-5 cursor-pointer bg-gradient-to-br from-indigo-400 via-blue-400 to-green-400 rounded-2xl p-0.5">
+                <div class="flex gap-4 p-5 bg-gray-900 md:gap-5 bg-opacity-5 rounded-xl">
+                    <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-white rounded-full md:w-14 md:h-14 bg-gradient-to-br from-indigo-300 via-blue-300 to-green-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold text-white md:text-xl">Payments</h3>
+                        <p class="mb-2 text-sm text-blue-50">Easily accept payments easily within your applications using our intuitive API.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex gap-4 md:gap-5 cursor-pointer bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 rounded-2xl p-0.5">
+                <div class="flex gap-4 p-5 bg-gray-900 md:gap-5 bg-opacity-5 rounded-xl">
+                    <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-white rounded-full md:w-14 md:h-14 bg-gradient-to-br from-pink-300 via-purple-300 to-blue-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"></path></svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold text-white md:text-xl">Customizations</h3>
+                        <p class="mb-2 text-sm text-blue-50">You can customize the look and feel of every aspect inside your customer portal.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- feature - end -->
+
+            <!-- feature - start -->
+            <div class="flex gap-4 md:gap-5 bg-gradient-to-br group from-pink-400 via-red-400 to-yellow-400 rounded-2xl p-0.5">
+                <div class="flex gap-4 p-5 bg-gray-900 md:gap-5 bg-opacity-5 rounded-xl">
+                    <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-white rounded-full md:w-14 md:h-14 bg-gradient-to-br from-yellow-300 via-red-300 to-pink-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"></path></svg>
+                    </div>
+
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold text-white md:text-xl">Plugins</h3>
+                        <p class="mb-2 text-sm text-red-50">Hundreds of plug-ins for you to use to modify the functionality of your application.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- feature - end -->
+
         </div>
     </div>
-    <!-- END OF PRICING SECTION -->
+</div><section class="relative px-10 py-16 overflow-hidden bg-gray-100">
+    <img class="absolute left-0 z-0 w-3/4 transform -translate-y-1/2 opacity-70 top-1/2" src="https://cdn.devdojo.com/tails/images/gradient-blob.svg">
+    <img class="absolute left-0 z-0 object-cover object-center w-full h-full opacity-50 top-24" src="https://cdn.devdojo.com/tails/images/swirl-white.svg">
+    <div class="container relative z-10 px-4 mx-auto">
+        <div class="w-full mb-8 sm:w-1/2 md:w-3/4 sm:pr-4 md:pr-12 sm:-mb-32 md:-mb-24 lg:-mb-36 xl:-mb-28">
+            <h2 class="tracking-widest text-indigo-500 uppercase">Features</h2>
+            <p class="my-3 text-5xl font-bold tracking-tighter text-indigo-900 lg:text-6xl">Integrated Editor</p>
+            <p class="max-w-sm text-lg text-gray-500">Check out our awesome features including a beautiful dashboard, member management, integrations center, and much more.</p>
+        </div>
+
+        <div class="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <div class="row-span-2 col-span-full sm:col-span-1 md:col-start-1 sm:row-start-2 md:row-start-3">
+                <a href="#_" class="relative flex flex-col items-start justify-end w-full h-full overflow-hidden bg-black shadow-lg rounded-xl group" style="aspect-ratio: 1/1;">
+                    <div class="absolute inset-0 w-full h-full">
+                        <div class="absolute bottom-0 left-0 z-10 w-full h-full opacity-30 bg-gradient-to-b from-transparent to-gray-900"></div>
+                        <img class="absolute inset-0 object-cover object-center w-full h-full transition duration-500 lg:opacity-80 group-hover:opacity-100 group-hover:scale-110" src="https://cdn.devdojo.com/images/september2021/beautiful-dashboard.jpeg" alt="">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-start justify-start w-full px-6 py-7">
+                        <span class="px-2 py-1 mb-3 text-xs font-semibold tracking-tight text-white uppercase bg-indigo-500 rounded-md">Pro</span>
+                        <h4 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-3xl md:text-2xl lg:text-3xl">Beautiful Dashboard</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="row-span-2 col-span-full sm:col-span-1 md:col-start-1 xl:col-start-2 sm:row-start-4 md:row-start-5 xl:row-start-2">
+                <a href="#_" class="relative flex flex-col items-start justify-end w-full h-full overflow-hidden bg-black shadow-lg rounded-xl group" style="aspect-ratio: 1/1;">
+                    <div class="absolute inset-0 w-full h-full">
+                        <div class="absolute bottom-0 left-0 z-10 w-full h-full opacity-30 bg-gradient-to-b from-transparent to-gray-900"></div>
+                        <img class="absolute inset-0 object-cover object-center w-full h-full transition duration-500 lg:opacity-80 group-hover:opacity-100 group-hover:scale-110" src="https://cdn.devdojo.com/images/september2021/member-management.jpeg" alt="">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-start justify-start w-full px-6 py-7">
+                        <span class="px-2 py-1 mb-3 text-xs font-semibold tracking-tight text-white uppercase bg-indigo-500 rounded-md">Pro</span>
+                        <h4 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-3xl md:text-2xl lg:text-3xl">Member Management</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="row-span-2 col-span-full sm:col-span-1 md:col-start-2 xl:col-start-2 sm:row-start-6 md:row-start-2 xl:row-start-4">
+                <a href="#_" class="relative flex flex-col items-start justify-end w-full h-full overflow-hidden bg-black shadow-lg rounded-xl group" style="aspect-ratio: 1/1;">
+                    <div class="absolute inset-0 w-full h-full">
+                        <div class="absolute bottom-0 left-0 z-10 w-full h-full opacity-30 bg-gradient-to-b from-transparent to-gray-900"></div>
+                        <img class="absolute inset-0 object-cover object-center w-full h-full transition duration-500 lg:opacity-80 group-hover:opacity-100 group-hover:scale-110" src="https://cdn.devdojo.com/images/september2021/custom-navigation.jpeg" alt="">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-start justify-start w-full px-6 py-7">
+                        <span class="px-2 py-1 mb-3 text-xs font-semibold tracking-tight text-white uppercase bg-indigo-500 rounded-md">Pro</span>
+                        <h4 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-3xl md:text-2xl lg:text-3xl">Custom Navigation</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="row-span-2 col-span-full sm:col-span-1 md:col-start-2 xl:col-start-3 sm:row-start-1 md:row-start-4 xl:row-start-1">
+                <a href="#_" class="relative flex flex-col items-start justify-end w-full h-full overflow-hidden bg-black shadow-lg rounded-xl group" style="aspect-ratio: 1/1;">
+                    <div class="absolute inset-0 w-full h-full">
+                        <div class="absolute bottom-0 left-0 z-10 w-full h-full opacity-30 bg-gradient-to-b from-transparent to-gray-900"></div>
+                        <img class="absolute inset-0 object-cover object-center w-full h-full transition duration-500 lg:opacity-80 group-hover:opacity-100 group-hover:scale-110" src="https://cdn.devdojo.com/images/september2021/integration-center.jpeg" alt="">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-start justify-start w-full px-6 py-7">
+                        <span class="px-2 py-1 mb-3 text-xs font-semibold tracking-tight text-white uppercase bg-indigo-500 rounded-md">Pro</span>
+                        <h4 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-3xl md:text-2xl lg:text-3xl">Integration Center</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="row-span-2 col-span-full sm:col-span-1 md:col-start-3 xl:col-start-3 sm:row-start-3 md:row-start-1 xl:row-start-3">
+                <a href="#_" class="relative flex flex-col items-start justify-end w-full h-full overflow-hidden bg-black shadow-lg rounded-xl group" style="aspect-ratio: 1/1;">
+                    <div class="absolute inset-0 w-full h-full">
+                        <div class="absolute bottom-0 left-0 z-10 w-full h-full opacity-30 bg-gradient-to-b from-transparent to-gray-900"></div>
+                        <img class="absolute inset-0 object-cover object-center w-full h-full transition duration-500 lg:opacity-80 group-hover:opacity-100 group-hover:scale-110" src="https://cdn.devdojo.com/images/september2021/design-handoff.jpeg" alt="">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-start justify-start w-full px-6 py-7">
+                        <span class="px-2 py-1 mb-3 text-xs font-semibold tracking-tight text-white uppercase bg-indigo-500 rounded-md">Pro</span>
+                        <h4 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-3xl md:text-2xl lg:text-3xl">Design Handoff</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="row-span-2 col-span-full sm:col-span-1 md:col-start-3 xl:col-start-4 sm:row-start-5 md:row-start-3 xl:row-start-2">
+                <a href="#_" class="relative flex flex-col items-start justify-end w-full h-full overflow-hidden bg-black shadow-lg rounded-xl group" style="aspect-ratio: 1/1;">
+                    <div class="absolute inset-0 w-full h-full">
+                        <div class="absolute bottom-0 left-0 z-10 w-full h-full bg-gradient-to-b from-transparent to-gray-900 opacity-30"></div>
+                        <img class="absolute inset-0 object-cover object-center w-full h-full transition duration-500 lg:opacity-80 group-hover:opacity-100 group-hover:scale-110" src="https://cdn.devdojo.com/images/september2021/3rd-party-modules.jpeg" alt="">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-start justify-start w-full px-6 py-7">
+                        <span class="px-2 py-1 mb-3 text-xs font-semibold tracking-tight text-white uppercase bg-indigo-500 rounded-md">Pro</span>
+                        <h4 class="text-4xl font-bold tracking-tight text-gray-100 sm:text-3xl md:text-2xl lg:text-3xl">3rd Party Modules</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section><section class="w-full bg-gray-900 py-32 overflow-hidden relative">
+    <div class="absolute left-0 bottom-0 w-48 h-48 -ml-24 -mb-24 bg-yellow-300 rounded-full"></div>
+    <div class="absolute right-0 p-1 top-0 w-96 h-96 translate-x-1/2 -translate-y-1/2 -mt-20 bg-gradient-to-r from-pink-400 via-blue-500 to-red-500 flex items-center justify-center rounded-full">
+        <div class="w-full h-full relative bg-gray-900 rounded-full"></div>
+    </div>
+    <div class="max-w-xs px-5 sm:max-w-5xl mx-auto flex lg:flex-row flex-col items-start sm:items-center lg:items-end relative">
+        <h2 class="text-white sm:pl-10 font-thin text-4xl sm:text-5xl  lg:text-left sm:text-center relative leading-none">Start Crafting Your<br>Next Great Idea.</h2>
+        <div class="lg:w-1/2 w-full flex flex-col justify-center relative items-end">
+            <div class="lg:w-auto w-full flex flex-col sm:items-center sm:text-center lg:text-left">
+                <a href="#_" class="font-medium text-white bg-red-500 hover:bg-red-600 text-center px-8 py-3.5 text-lg rounded-md">Get Started Today</a>
+                <p class="text-sm text-gray-400 mt-2">Awesome features you will love ❤️</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>
+
 
 @endsection
