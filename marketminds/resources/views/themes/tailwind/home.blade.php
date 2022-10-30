@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brief Nutty Sapphire</title>
+    <title>Market Minds</title>
     
     <link rel="shortcut icon" type="image/x-icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;📁&lt;/text&gt;&lt;/svg&gt;">
 
@@ -140,7 +140,7 @@
             </div>
 
             <div class="absolute z-20 flex-col justify-center hidden pr-5 mt-4 space-y-8 md:flex md:relative md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0">
-                <a class="flex-shrink-0 font-semibold text-gray-200 hover:underline" href="#_">Login</a>
+                <a class="flex-shrink-0 font-semibold text-gray-200 hover:underline" href="/admin/login">Login</a>
 
                 <a href="#_" class="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-gray-200 capitalize bg-transparent rounded-lg md:text-sm md:py-3 md:px-6 md:font-medium md:text-center md:text-white md:bg-gray-900 md:mx-0">
                     Sign up
