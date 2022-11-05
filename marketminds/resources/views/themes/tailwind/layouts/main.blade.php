@@ -34,7 +34,7 @@
 <body class="bg-white font-[Poppins]">
     <div class="flex">
         <!--Start of Sidebar code -->
-        <div class="fixed left-0 inset-y-0 p-2 w-[350px] text-center h-screen text-gray-700">
+        <div class="fixed left-0 inset-y-0 p-2 w-1/6 text-center h-screen text-gray-700 bg-[#9ba3eb1f]">
             <div class="text-xl">
                 <div class="p-2.5 mt-1 flex items-center rounded-md">
                     <i class="bi bi-app-indicator px-2 py-1 bg-blue-600 rounded-md"></i>
@@ -49,42 +49,43 @@
                 </div>
                 <hr class="my-2 text-gray-600">
                 <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
-                    <i class="bi bi-facebook"></i>
+                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-[#9BA3EB]">
+                    <i class="bi bi-facebook text-blue-500"></i>
                     <span class="text-[16px] ml-4">Facebook</span>
                 </div>
                 <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
-                    <i class="bi bi-instagram"></i>
+                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-[#9BA3EB]">
+                    <i class="bi bi-instagram bg-clip-text text-transparent bg-gradient-to-br
+                     from-[#7935ab] via-[#df0a2d] to-[#e8cf00]"></i>
                     <span class="text-[16px] ml-4">Instagram</span>
                 </div>
 
                 <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-[#9BA3EB]">
                     <i class="bi bi-medium"></i>
                     <span class="text-[16px] ml-4">Medium</span>
                 </div>
 
-                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:text-black">
-                    <i class="bi bi-reddit"></i>
+                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-[#9BA3EB]">
+                    <i class="bi bi-reddit text-orange-600"></i>
                     <span class="text-[16px] ml-4">Reddit</span>
                 </div>
 
                 <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-[#9BA3EB]">
                     <i class="bi bi-tiktok"></i>
                     <span class="text-[16px] ml-4">TikTok</span>
                 </div>
 
                 <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
-                    <i class="bi bi-twitter"></i>
+                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-[#9BA3EB]">
+                    <i class="bi bi-twitter text-blue-500"></i>
                     <span class="text-[16px] ml-4">Twitter</span>
                 </div>
 
                 <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
-                    <i class="bi bi-youtube"></i>
+                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-[#9BA3EB]">
+                    <i class="bi bi-youtube text-red-500"></i>
                     <span class="text-[15px] ml-4">YouTube</span>
                 </div>
             </div>
