@@ -58,9 +58,6 @@
     </main>
 
 
-
-    @include('theme::partials.footer')
-
     @if(config('wave.dev_bar'))
         @include('theme::partials.dev_bar')
     @endif
