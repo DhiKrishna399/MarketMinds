@@ -4368,3 +4368,7 @@ svg {
     opacity: 0.5;
   }
 }
+
+.expandable {
+  transition: height 0.35s;
+}

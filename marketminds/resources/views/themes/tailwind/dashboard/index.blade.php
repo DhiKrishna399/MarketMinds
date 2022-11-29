@@ -2,15 +2,14 @@
 
 <!--Dashboard Text Fields Code -->
 <div class="fixed inset-y-0 right-0 w-5/6 items-center place-self-end overflow-y-auto">
-    <meta charset=utf-8 />
-    <div class="flex flex-col justify-start items-center w-full">
-        <div class="flex rounded-b-xl bg-gradient-to-r from-[#9BA3EB] via-[#bf9beb] to-[#9bebe3] w-4/5 py-16">
+    <div class="flex flex-col justify-start items-center w-full bg-gradient-to-br from-[#9BA3EB] to-[#bf9beb] pb-20 rounded-b-3xl">
+        <div class="flex rounded-b-xl w-4/5 py-16">
             <span class="flex w-full text-6xl text-gray-200 font-semibold justify-center">
                 Social Media Template
             </span>
         </div>
         <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
-        <div class="flex flex-col w-3/5 space-y-6 items-center">
+        <div class="flex flex-col w-3/5 space-y-6 items-center bg-white/70 rounded-xl py-12 shadow-xl">
             <div class="flex flex-col items-center w-full">
                 <div class="flex items-center space-x-3 mb-3 w-7/12">
                     <div class="flex w-10 h-10 rounded-full bg-[#9BA3EB] items-center justify-center text-2xl">
@@ -72,25 +71,31 @@
                     style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 10px);">
                     <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="toneButton">
                         <li
-                            class="block py-2 px-4 hover:bg-[#9BA3EB]"
+                            class="block py-2 px-4 text-gray-500 hover:bg-[#9BA3EB] cursor-pointer"
+                            onClick="handleToneSelect('Choose your tone', 'Choose your tone')"
+                        >
+                        -Choose your tone-
+                        </li>
+                        <li
+                            class="block py-2 px-4 hover:bg-[#9BA3EB] cursor-pointer"
                             onClick="handleToneSelect('Happy &#128516', 'happy')"
                         >
                             Happy &#128516
                         </li>
                         <li
-                            class="block py-2 px-4 hover:bg-[#9BA3EB]"
+                            class="block py-2 px-4 hover:bg-[#9BA3EB] cursor-pointer"
                             onClick="handleToneSelect('Sad &#128532', 'sad')"
                         >
                             Sad &#128532
                         </li>
                         <li
-                            class="block py-2 px-4 hover:bg-[#9BA3EB]"
+                            class="block py-2 px-4 hover:bg-[#9BA3EB] cursor-pointer"
                             onClick="handleToneSelect('Excited', 'excited')"
                         >
                             Excited
                         </li>
                         <li
-                            class="block py-2 px-4 hover:bg-[#9BA3EB]"
+                            class="block py-2 px-4 hover:bg-[#9BA3EB] cursor-pointer"
                             onClick="handleToneSelect('Informative', 'informative')"
                         >
                             Informative
@@ -98,11 +103,9 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="flex flex-col items-center w-1/5 pt-10">
             <button
                 id="generateButton"
-                class="bg-[#9BA3EB] shadow-md hover:shadow-xl transform hover:-translate-y-1 disabled:hover:shadow-md disabled:hover:translate-y-0 disabled:bg-gray-300 text-white text-lg py-2 px-4 rounded-lg w-4/5 items-center transition-all"
+                class="bg-gradient-to-l from-[#9BA3EB] to-[#bf9beb] shadow-md hover:shadow-xl transform hover:-translate-y-1 disabled:hover:shadow-md disabled:hover:translate-y-0 disabled:bg-gray-300 text-white text-lg py-2 px-4 rounded-lg w-5/12 items-center transition-all"
                 onClick="handleSubmission()"
             >
                 Generate
@@ -129,21 +132,21 @@
 
     function sendRequest(name, desc, tone) {
 
-        let key = "enter API key here.";
+        let key = "ilG0T8tHV3aBEjHizYyB7uCCnfuS9dK7YjIO5flbilG0T8tHV3aBEjHizYyB7uCCnfuS9dK7YjIO5flb";
         // ----------------------------------
-        const url = "https://uqhzvj5rr9.execute-api.us-east-1.amazonaws.com/default/gpt_ad_service";
+        const url = "https://w9s59ny4ti.execute-api.us-east-1.amazonaws.com/default/gpt_ad_service_2";
         let req = new XMLHttpRequest();
         const data = JSON.stringify({
             "Product": name,
             "Description": desc,
             "Tone": tone,
             "Language": "English",
-            "Service": "tiktok_title_service"
+            "Service": "generic_product_description_service"
         });
         req.open("POST", url);
         // -------------------------------------
         req.addEventListener("load", () => {
-            const parsedRes = req.response.replaceAll('"', '').replaceAll('[', '').replaceAll(']', '').split(',');
+            const parsedRes = req.response.split(",")
             populateResults(parsedRes);
         })
         req.addEventListener("error", () => {
@@ -151,6 +154,7 @@
         })
         // -------------------------------------
         req.setRequestHeader("Content-Type", "application/json");
+        req.setRequestHeader("X-Api-Key", key);
         // ---set loading screen----------------
         const resScreen = document.getElementById("resultsList");
         const loadingLines = [
