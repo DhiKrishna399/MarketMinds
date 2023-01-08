@@ -16,6 +16,7 @@ class CreatePlansTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
+			$table->string('slug');
 			$table->text('description', 65535)->nullable();
 			$table->string('features');
 			$table->string('plan_id')->default('');

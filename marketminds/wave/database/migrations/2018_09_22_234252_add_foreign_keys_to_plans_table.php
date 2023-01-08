@@ -14,7 +14,7 @@ class AddForeignKeysToPlansTable extends Migration {
 	{
 		Schema::table('plans', function(Blueprint $table)
 		{
-			$table->foreign('role_id')->references('id')->on('roles')->onUpdate('RESTRICT')->onDelete('RESTRICT');
+			// $table->foreign('role_id')->references('id')->on('roles')->onUpdate('RESTRICT')->onDelete('RESTRICT');
 		});
 	}
 
@@ -28,7 +28,7 @@ class AddForeignKeysToPlansTable extends Migration {
 	{
 		Schema::table('plans', function(Blueprint $table)
 		{
-			$table->dropForeign('plans_role_id_foreign');
+			// $table->dropForeign('plans_role_id_foreign');
 		});
 	}
 

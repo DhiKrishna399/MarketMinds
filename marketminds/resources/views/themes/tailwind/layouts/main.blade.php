@@ -118,13 +118,10 @@
                     </div>
                     <span id="account_name_sidebar">Kolin</span>
                 </div>
-                <span
-                    id="sign_out_sidebar"
-                    class="flex items-center h-max text-sm cursor-pointer border-b border-transparent hover:border-gray-500"
-                    onClick="handleSignOutClick()"
-                >
-                    Sign Out
-                </span>
+                <form action="/logout" method="POST">
+	                {{ csrf_field() }}
+	                <button type="submit" class="py-2 px-4 text-black bg-danger inline-flex"><i class="fa fa-power-off mr-2"></i> Logout</button>
+	            </form>
             </div>
         </div>
     </div>

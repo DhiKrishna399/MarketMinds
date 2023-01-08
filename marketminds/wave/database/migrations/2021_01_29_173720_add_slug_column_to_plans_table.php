@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddStripeStatusColumnToSubscriptionsTable extends Migration
+class AddSlugColumnToPlansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddStripeStatusColumnToSubscriptionsTable extends Migration
      */
     public function up()
     {
-        Schema::table('subscriptions', function (Blueprint $table) {
-            // $table->string('stripe_status');
+        Schema::table('plans', function (Blueprint $table) {
+           
         });
     }
 
@@ -25,8 +25,6 @@ class AddStripeStatusColumnToSubscriptionsTable extends Migration
      */
     public function down()
     {
-        Schema::table('subscriptions', function (Blueprint $table) {
-            // $table->dropColumn('stripe_status');
-        });
+        Schema::dropIfExists('plans');
     }
 }
