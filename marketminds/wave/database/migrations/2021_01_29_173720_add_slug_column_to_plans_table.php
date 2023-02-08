@@ -14,7 +14,7 @@ class AddSlugColumnToPlansTable extends Migration
     public function up()
     {
         Schema::table('plans', function (Blueprint $table) {
-            $table->string('slug')->unique()->after('name');
+           
         });
     }
 
@@ -25,8 +25,6 @@ class AddSlugColumnToPlansTable extends Migration
      */
     public function down()
     {
-        Schema::table('plans', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('plans');
     }
 }

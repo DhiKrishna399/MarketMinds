@@ -46,23 +46,29 @@
             <div class="sticky bottom-0 left-0 z-10 bg-white flex justify-between items-center py-4 px-3 w-full h-18">
                 <div class="absolute inset-0 bg-[#9ba3eb1f] -z-10"></div>
                 <div class="flex items-center justify-center">
-                    <div class="flex font-bold items-center justify-center rounded-full w-12 h-12 bg-gray-400 mr-3">
-                        KN
-                    </div>
+                <button id="dropdownTopButton" data-dropdown-toggle="dropdownTop" data-dropdown-placement="top" class="mr-3 mb-3 md:mb-0 text-black bg-gray-700 hover:bg-gray-800 hover: text-white focus:ring-4 focus:outline--none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">KN <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownTop" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownTopButton">
+                      <li>
+                        <a href="dashboard" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                      </li>
+                      <li>
+                        <a href="settings/plans" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Plans</a>
+                      </li>
+                      <li>
+                        <a href="settings" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                      </li>
+                      <li>
+                        <form action="/logout" method="POST">
+	                            {{ csrf_field() }}
+	                            <button type="submit" class="py-2 px-4 text-black bg-danger inline-flex"><i class="fa fa-power-off mr-2"></i> Logout</button>
+	                    </form>
+                      </li>
+                    </ul>
+                </div>
                     <span id="account_name_sidebar">Kolin</span>
                 </div>
-                <form
-                    action="/logout"
-                    method="POST"
-                >
-                    {{ csrf_field() }}
-                    <button
-                        type="submit"
-                        class="py-2 px-4 text-black bg-danger inline-flex"
-                    >
-                        <i class="fa fa-power-off mr-2"></i> Logout
-                    </button>
-                </form>
             </div>
         </div>
     </div>
