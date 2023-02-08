@@ -4,6 +4,7 @@ namespace Wave\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\UserTokens;
 use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -124,6 +125,17 @@ class RegisterController extends Controller
             'verified' => $verified,
             'trial_ends_at' => $trial_ends_at
         ]);
+        $tokensRemaining = 10000;
+        $tokensUsed = 0;
+        $plan = 42632;
+        
+        // Create userTokens object that will be linked to user table in database
+        $user_tokens = UserTokens::create([
+            'tokens_remaining' => $tokensRemaining,
+            'tokens_used' => $tokensUsed,
+            'plan' => $plan,
+            'user_email' => $data['email'],
+        ]);   
 
         if(setting('auth.verify_email', false)){
             $this->sendVerificationEmail($user);
@@ -210,7 +222,7 @@ class RegisterController extends Controller
                         ?: redirect($this->redirectPath())->with(['message' => 'Thanks for signing up!', 'message_type' => 'success']);
         }
     }
-
+    // Check the counter function is incrementing ID in database
     public function getUniqueUsernameFromEmail($email)
     {
         $username = strtolower(trim(Str::slug(explode('@', $email)[0])));

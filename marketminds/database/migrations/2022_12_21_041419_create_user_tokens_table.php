@@ -15,10 +15,11 @@ return new class extends Migration
     {
         Schema::create('user_tokens', function (Blueprint $table) {
             $table->id();
+            $table->string('user_email');
             $table->integer('tokens_remaining');
             $table->integer('tokens_used');
             $table->integer('plan');
-            $table->foreign('id')->references('id')->on('users');
+            $table->foreign('user_email')->references('email')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
