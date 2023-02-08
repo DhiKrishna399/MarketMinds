@@ -2,21 +2,15 @@
 <html lang="{{ app()->getLocale() }}">
 
 <head>
-
-    <!-- <title>
-        {{ setting('site.title', 'Laravel Wave') . ' - ' . setting('site.description', 'The Software as a Service Starter Kit built on Laravel & Voyager') }}
-    </title> -->
     <title>
         MarketMind
     </title>
-
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="url" content="{{ url('/') }}">
-
 
     <link rel="icon" href="{{ setting('site.favicon', '/wave/favicon.png') }}" type="image/x-icon">
 
@@ -31,14 +25,14 @@
 </head>
 
 
-<body class="bg-white font-[Poppins]">
+<body class="bg-[#f3f3f3] font-[Poppins]">
     <div class="flex">
         <!--Start of Sidebar code -->
-        <div class="fixed left-0 inset-y-0 p-2 w-1/6 flex flex-col justify-between text-center h-screen text-gray-700 bg-[#9ba3eb1f]">
-            <div class="flex flex-col text-xl">
+        <div class="fixed left-0 inset-y-0 p-2 w-1/6 flex flex-col justify-between text-center h-screen text-gray-700 bg-white">
+            <div class="flex flex-col text-xl overflow-y-auto overflow-x-hidden">
                 <div class="p-2.5 mt-1 flex items-center rounded-md">
-                    <i class="bi bi-app-indicator px-2 py-1 bg-blue-600 rounded-md"></i>
-                    <h1 class="text-[30px]  ml-3 text-xl font-bold">MarketMinds.ai</h1>
+                    <i class="bi bi-app-indicator px-2 py-1 bg-gradient-to-tr from-green-500 via-teal-400 to-emerald-500 rounded-md"></i>
+                    <h1 class="text-2xl ml-3 font-bold">WordZilla</h1>
                 </div>
 
                 <!--Products + Items in SideBar -->
@@ -47,71 +41,10 @@
                     <span class="text-[24px] ml-4">Services</span>
                 </div>
                 <hr class="my-2 text-gray-600">
-                <div
-                    id="facebook_services"
-                    class="flex flex-col items-start"
-                >
-                    <div
-                        id="facebook_services_button"
-                        onClick="handleServiceSelectorClick('facebook_services', true)"
-                        class="flex items-center w-full rounded-lg px-4 duration-300 cursor-pointer p-2.5 mt-2 hover:bg-[#9BA3EB] text-xl"
-                    >
-                        <i class="bi bi-facebook text-blue-500 flex"></i>
-                        <span class="ml-4">Facebook</span>
-                    </div>
-                    <div
-                        id="facebook_services_options"
-                        class="flex flex-col justify-evenly w-full h-0 ml-5 overflow-y-hidden transition-all expandable rounded-bl border-l-2 border-[#9BA3EB]"
-                    >
-                        <span
-                            id="facebook_services_opt_1"
-                            value="service_name_here"
-                            class="flex py-1 px-3 mr-5 ml-4 rounded cursor-pointer hover:bg-[#9ba3eba6] transition-all"
-                            onClick="handleServiceSelectorClick('facebook_services_opt_1', false, 'facebook_services')"
-                        >Service-1</span>
-                        <span class="flex py-1 px-3 mr-5 ml-4 rounded cursor-pointer hover:bg-[#9ba3eba6] transition-all">Service-2</span>
-                        <span class="flex py-1 px-3 mr-5 ml-4 rounded cursor-pointer hover:bg-[#9ba3eba6] transition-all">Service-3</span>
-                        <span class="flex py-1 px-3 mr-5 ml-4 rounded cursor-pointer hover:bg-[#9ba3eba6] transition-all">Service-4</span>
-                    </div>
-                </div>
-                <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-[#9BA3EB]">
-                    <i class="bi bi-instagram bg-clip-text text-transparent bg-gradient-to-br
-                     from-[#7935ab] via-[#df0a2d] to-[#e8cf00]"></i>
-                    <span class="text-[16px] ml-4">Instagram</span>
-                </div>
-
-                <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-[#9BA3EB]">
-                    <i class="bi bi-medium"></i>
-                    <span class="text-[16px] ml-4">Medium</span>
-                </div>
-
-                <div class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-[#9BA3EB]">
-                    <i class="bi bi-reddit text-orange-600"></i>
-                    <span class="text-[16px] ml-4">Reddit</span>
-                </div>
-
-                <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-[#9BA3EB]">
-                    <i class="bi bi-tiktok"></i>
-                    <span class="text-[16px] ml-4">TikTok</span>
-                </div>
-
-                <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-[#9BA3EB]">
-                    <i class="bi bi-twitter text-blue-500"></i>
-                    <span class="text-[16px] ml-4">Twitter</span>
-                </div>
-
-                <div
-                    class="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-[#9BA3EB]">
-                    <i class="bi bi-youtube text-red-500"></i>
-                    <span class="text-[15px] ml-4">YouTube</span>
-                </div>
+                <div id="serviceMenu" class="flex flex-col text-xl overflow-y-auto overflow-x-hidden space-y-6 pt-6"></div>
             </div>
-            <div class="flex justify-between items-center mb-6 mx-3">
-
+            <div class="sticky bottom-0 left-0 z-10 bg-white flex justify-between items-center py-4 px-3 w-full h-18">
+                <div class="absolute inset-0 bg-[#9ba3eb1f] -z-10"></div>
                 <div class="flex items-center justify-center">
                 <button id="dropdownTopButton" data-dropdown-toggle="dropdownTop" data-dropdown-placement="top" class="mr-3 mb-3 md:mb-0 text-black bg-gray-700 hover:bg-gray-800 hover: text-white focus:ring-4 focus:outline--none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">KN <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg></button>
                 <!-- Dropdown menu -->
@@ -136,48 +69,74 @@
                 </div>
                     <span id="account_name_sidebar">Kolin</span>
                 </div>
-               
             </div>
         </div>
     </div>
-
+    <script type="module">
+        import serviceMap from './serviceMap.js'
+        function populateServiceMenu() {
+            let menu = document.getElementById("serviceMenu");
+            let keys = Object.keys(serviceMap);
+            let temp = ``;
+            keys.forEach((key, i) => (
+                temp +=
+                `<div
+                    id={${key.toLowerCase()}}
+                    class="flex flex-col items-start cursor-pointer justify-center"
+                    onClick="expandService('${key.toLowerCase()}')"
+                >
+                    <div class="flex items-center">
+                        <i class="bi bi-${key.toLowerCase()} ${serviceMap[key].iconColorClass} px-3 rounded-md"></i>
+                        <span class="text-black">${key}</span>
+                    </div>
+                    <div id="${key.toLowerCase() + "-dropdown"}" class="flex flex-col text-lg space-y-4 mt-4 ml-6 items-start justify-center expandable h-0 overflow-hidden">
+                        ${populateServiceOptions(serviceMap[key].services)}
+                    </div>
+                </div>`
+                )
+            );
+            menu.innerHTML = temp;
+            }
+        populateServiceMenu();
+    </script>
     <script>
-     function setBorderColorAndCharCount() {
-        var length = document.getElementById('productDescription').value.length
-        var prodTextField = document.getElementById('productDescription')
-        var result = ""
-        if (length == 0) {
-            prodTextField.style.borderColor = 'gray'
-        } else if (length > 0 && length < 25) {
-            prodTextField.style.borderColor = 'yellow'
-        } else if (length >= 25 && length < 1000) {
-            prodTextField.style.borderColor = 'green'
-        } else {
-            prodTextField.style.borderColor = 'red'
-        }
-        document.getElementById("count").innerHTML = length + "/1000"
-    }
-
-    function handleSignOutClick() {
-        console.log("The 'Sign Out' button has been clicked, look for 'handleSignOutClick()' function in script of sidebar code to finish implementation.")
-    }
-
-    function handleServiceSelectorClick(elementId, expand, parentId = null) {
-        if (expand) {
-            const btn = document.getElementById(elementId + "_button");
-            const section = document.getElementById(elementId + "_options");
-            if (section.classList.contains("h-0")) {
-                btn.classList.replace("hover:bg-[#9BA3EB]", "bg-[#9BA3EB]");
-                section.classList.replace("h-0", "h-44");
+        function setBorderColorAndCharCount() {
+            let length = document.getElementById('productDescription').value.length
+            let prodTextField = document.getElementById('productDescription')
+            let result = ""
+            if (length == 0) {
+                prodTextField.style.borderColor = 'gray'
+            } else if (length > 0 && length < 25) {
+                prodTextField.style.borderColor = 'yellow'
+            } else if (length >= 25 && length < 1000) {
+                prodTextField.style.borderColor = 'green'
+            } else {
+                prodTextField.style.borderColor = 'red'
             }
-            else {
-                btn.classList.replace("bg-[#9BA3EB]", "hover:bg-[#9BA3EB]");
-                section.classList.replace("h-44", "h-0");
-            }
-        } else {
-            console.log(document.getElementById(elementId).value);
+            document.getElementById("count").innerHTML = length + "/1000"
         }
-    }
+
+        function populateServiceOptions(services) {
+            let temp = ``;
+            services.forEach((service, j) => (
+                temp += `<button id="${service.name}" onClick="handleServiceSelectorClick('${service.name}', '${service.prettyName}')">
+                    ${service.prettyName}
+                </button>`
+            ))
+            return temp;
+        }
+
+        function expandService(name, size = "h-16") {
+            const section = document.getElementById(name + "-dropdown");
+            if (section.classList.contains("h-0")) section.classList.replace("h-0", size);
+            else section.classList.replace(size, "h-0");
+        }
+
+        function handleServiceSelectorClick(serviceName, servicePrettyName) {
+            const activeServiceSelector = document.getElementById("active_service");
+            activeServiceSelector.setAttribute("data-active-service", serviceName);
+            activeServiceSelector.innerHTML = servicePrettyName;
+        }
     </script>
 
     @livewireScripts
